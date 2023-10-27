@@ -1,0 +1,136 @@
+Position	Secondary_structure	Solvent_accessibility
+2	none	83
+3	none	1
+4	Beta ladder	1
+5	Beta ladder	48
+6	Beta ladder	0
+7	H-bonded turn	91
+8	H-bonded turn	54
+9	none	1
+10	none	66
+11	none	0
+12	Beta bridge	51
+13	H-bonded turn	57
+14	H-bonded turn	50
+15	none	70
+16	none	97
+17	Beta ladder	0
+18	Beta ladder	7
+19	Beta ladder	1
+20	Beta ladder	0
+21	Beta ladder	0
+22	Beta ladder	71
+23	Beta ladder	4
+24	none	58
+25	Bend	126
+26	Bend	118
+27	none	12
+28	Bend	110
+29	Beta ladder	73
+30	Beta ladder	1
+31	Beta ladder	6
+32	Beta ladder	3
+33	Beta ladder	8
+34	Beta ladder	1
+35	Beta ladder	0
+36	Beta ladder	72
+37	Beta ladder	45
+38	H-bonded turn	106
+39	H-bonded turn	88
+40	Beta ladder	25
+41	Beta ladder	7
+42	Beta ladder	1
+43	Beta ladder	2
+44	Beta ladder	14
+45	Beta ladder	1
+46	Beta ladder	1
+47	Beta ladder	0
+48	Beta ladder	21
+49	Beta ladder	16
+50	Beta ladder	94
+51	Beta ladder	82
+52	H-bonded turn	61
+53	H-bonded turn	101
+54	Beta ladder	20
+55	Beta ladder	89
+56	Beta ladder	85
+57	Beta ladder	13
+58	Beta ladder	0
+59	Beta ladder	0
+60	Beta ladder	5
+61	Beta ladder	2
+62	Beta ladder	0
+63	Beta ladder	0
+64	Bend	92
+65	Bend	135
+66	3/10 helix	5
+67	3/10 helix	127
+68	3/10 helix	136
+69	none	14
+70	none	91
+71	none	79
+72	none	103
+73	none	79
+74	Beta ladder	73
+75	Beta ladder	115
+76	Beta ladder	23
+77	none	118
+78	none	91
+79	none	33
+80	none	50
+81	none	13
+82	none	66
+83	H-bonded turn	50
+84	H-bonded turn	32
+85	none	55
+86	Beta ladder	79
+87	Beta ladder	5
+88	Beta ladder	38
+89	Beta ladder	0
+90	Beta ladder	29
+91	Beta ladder	1
+92	Beta ladder	15
+93	Beta ladder	4
+94	none	46
+95	Bend	65
+96	Bend	115
+97	Beta ladder	65
+98	Beta ladder	0
+99	Beta ladder	60
+100	Beta ladder	0
+101	Beta ladder	71
+102	Beta ladder	2
+103	H-bonded turn	81
+104	H-bonded turn	148
+105	Bend	26
+106	none	10
+107	Beta ladder	109
+108	Beta ladder	25
+109	Beta ladder	105
+110	Beta ladder	2
+111	Beta ladder	50
+112	none	8
+113	H-bonded turn	60
+114	H-bonded turn	42
+115	none	78
+116	none	51
+117	Bend	127
+118	Beta bridge	63
+119	none	0
+120	none	33
+121	Beta ladder	20
+122	Beta ladder	2
+123	Beta ladder	8
+124	Beta ladder	12
+125	Beta ladder	43
+126	Beta ladder	50
+127	Bend	45
+128	Beta ladder	12
+129	Beta ladder	137
+130	Beta ladder	12
+131	Beta ladder	9
+132	Beta ladder	15
+133	Beta ladder	0
+134	Beta ladder	54
+135	Beta ladder	8
+136	none	126

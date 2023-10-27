@@ -1,0 +1,124 @@
+Position	Secondary_structure	Solvent_accessibility
+1	none	182
+2	none	154
+3	Bend	97
+4	Alpha helix	42
+5	Alpha helix	126
+6	Alpha helix	20
+7	Alpha helix	68
+8	Alpha helix	104
+9	Alpha helix	5
+10	Alpha helix	24
+11	Alpha helix	70
+12	Alpha helix	67
+13	Alpha helix	11
+14	Beta bridge	27
+15	none	18
+16	Bend	36
+17	Bend	178
+18	none	28
+19	Bend	191
+20	none	42
+21	none	64
+22	Bend	79
+23	Alpha helix	42
+24	Alpha helix	158
+25	Alpha helix	19
+26	Alpha helix	0
+27	Alpha helix	41
+28	Alpha helix	57
+29	Alpha helix	0
+30	Alpha helix	0
+31	Alpha helix	166
+32	Alpha helix	159
+33	H-bonded turn	53
+34	H-bonded turn	45
+35	H-bonded turn	12
+36	H-bonded turn	27
+37	H-bonded turn	88
+38	H-bonded turn	65
+39	H-bonded turn	11
+40	none	59
+41	Bend	77
+42	Beta ladder	5
+43	Beta ladder	0
+44	Beta ladder	0
+45	Beta ladder	0
+46	Beta ladder	0
+47	none	11
+48	Bend	39
+49	none	72
+50	Alpha helix	76
+51	Alpha helix	151
+52	Alpha helix	39
+53	Alpha helix	1
+54	Alpha helix	96
+55	3/10 helix	9
+56	3/10 helix	0
+57	3/10 helix	21
+58	Bend	106
+59	H-bonded turn	114
+60	H-bonded turn	164
+61	H-bonded turn	16
+62	Beta ladder	0
+63	Beta ladder	40
+64	Beta ladder	94
+65	Beta ladder	38
+66	H-bonded turn	191
+67	H-bonded turn	154
+68	H-bonded turn	147
+69	Beta ladder	23
+70	Beta ladder	31
+71	Beta ladder	10
+72	Beta ladder	0
+73	Bend	75
+74	Beta bridge	33
+75	none	17
+76	Beta ladder	12
+77	Beta ladder	70
+78	Beta ladder	3
+79	Beta ladder	0
+80	Beta ladder	13
+81	Beta ladder	0
+82	Beta ladder	63
+83	Beta ladder	24
+84	none	94
+85	Bend	66
+86	Bend	84
+87	none	60
+88	Bend	59
+89	Bend	155
+90	Bend	77
+91	Bend	132
+92	none	17
+93	none	56
+94	Beta ladder	1
+95	Beta ladder	98
+96	Beta ladder	22
+97	Beta ladder	85
+98	Beta ladder	57
+99	Beta ladder	29
+100	Beta ladder	35
+101	Beta ladder	24
+102	none	0
+103	none	0
+104	Beta ladder	1
+105	Beta ladder	0
+106	Beta ladder	17
+107	Beta ladder	40
+108	Beta ladder	99
+109	H-bonded turn	165
+110	H-bonded turn	47
+111	Beta ladder	33
+112	Beta ladder	0
+113	Beta ladder	30
+114	Beta ladder	99
+115	Beta ladder	7
+116	none	27
+117	3/10 helix	20
+118	3/10 helix	49
+119	3/10 helix	12
+120	3/10 helix	25
+121	none	123
+122	none	91
+123	none	143

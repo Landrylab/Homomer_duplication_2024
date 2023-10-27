@@ -1,0 +1,132 @@
+Position	Secondary_structure	Solvent_accessibility
+1	none	168
+2	none	70
+3	none	69
+4	none	26
+5	Alpha helix	40
+6	Alpha helix	73
+7	Alpha helix	83
+8	Alpha helix	24
+9	Alpha helix	0
+10	Alpha helix	91
+11	Alpha helix	6
+12	Alpha helix	5
+13	Alpha helix	76
+14	Alpha helix	9
+15	Alpha helix	0
+16	Alpha helix	86
+17	Alpha helix	61
+18	Alpha helix	0
+19	Alpha helix	16
+20	Alpha helix	41
+21	Alpha helix	20
+22	Alpha helix	0
+23	Alpha helix	29
+24	Alpha helix	32
+25	Alpha helix	14
+26	Alpha helix	0
+27	Alpha helix	99
+28	Alpha helix	46
+29	Alpha helix	10
+30	Alpha helix	30
+31	Alpha helix	134
+32	Bend	49
+33	none	177
+34	none	56
+35	none	90
+36	Alpha helix	40
+37	Alpha helix	61
+38	Alpha helix	59
+39	Alpha helix	0
+40	Alpha helix	70
+41	Alpha helix	25
+42	Alpha helix	0
+43	Alpha helix	0
+44	Alpha helix	73
+45	Alpha helix	0
+46	Alpha helix	2
+47	Alpha helix	11
+48	Alpha helix	13
+49	Alpha helix	1
+50	Alpha helix	16
+51	H-bonded turn	72
+52	Bend	3
+53	none	44
+54	3/10 helix	20
+55	3/10 helix	61
+56	3/10 helix	74
+57	3/10 helix	2
+58	Bend	29
+59	none	15
+60	3/10 helix	128
+61	3/10 helix	20
+62	3/10 helix	0
+63	3/10 helix	53
+64	Bend	117
+65	none	82
+66	Beta bridge	34
+67	H-bonded turn	80
+68	H-bonded turn	169
+69	Beta bridge	16
+70	none	151
+71	none	20
+72	none	86
+73	Beta bridge	20
+74	none	65
+75	3/10 helix	71
+76	3/10 helix	68
+77	3/10 helix	12
+78	H-bonded turn	38
+79	H-bonded turn	150
+80	none	70
+81	Alpha helix	90
+82	Alpha helix	179
+83	Alpha helix	35
+84	Alpha helix	17
+85	Alpha helix	26
+86	Alpha helix	84
+87	Alpha helix	10
+88	Alpha helix	48
+89	Alpha helix	161
+90	Alpha helix	98
+91	Alpha helix	36
+92	Alpha helix	43
+93	Alpha helix	34
+94	Alpha helix	18
+95	Alpha helix	0
+96	Alpha helix	55
+97	Alpha helix	65
+98	Alpha helix	0
+99	Alpha helix	18
+100	Alpha helix	132
+101	Alpha helix	31
+102	Alpha helix	1
+103	H-bonded turn	62
+104	H-bonded turn	94
+105	H-bonded turn	33
+106	none	104
+107	Alpha helix	24
+108	Alpha helix	104
+109	Alpha helix	35
+110	Alpha helix	0
+111	Alpha helix	79
+112	Alpha helix	86
+113	Alpha helix	5
+114	Alpha helix	32
+115	Alpha helix	42
+116	Alpha helix	94
+117	Alpha helix	0
+118	Alpha helix	28
+119	Alpha helix	57
+120	Alpha helix	12
+121	Alpha helix	39
+122	Alpha helix	119
+123	Alpha helix	40
+124	Alpha helix	33
+125	Alpha helix	64
+126	Alpha helix	129
+127	Alpha helix	101
+128	Alpha helix	12
+129	Beta bridge	103
+130	none	31
+131	none	234

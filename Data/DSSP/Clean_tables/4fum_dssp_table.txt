@@ -1,0 +1,55 @@
+Position	Secondary_structure	Solvent_accessibility
+2	none	104
+3	Beta bridge	53
+4	none	65
+5	none	99
+6	Beta ladder	112
+7	Beta ladder	102
+8	Beta ladder	53
+9	Beta ladder	122
+10	Beta ladder	102
+11	Beta ladder	138
+12	Beta ladder	32
+13	none	103
+14	none	69
+15	none	113
+16	Beta ladder	154
+17	Beta ladder	72
+18	Beta ladder	138
+19	Beta ladder	72
+20	Beta ladder	41
+21	none	8
+22	H-bonded turn	49
+23	H-bonded turn	37
+24	Bend	22
+25	none	54
+26	H-bonded turn	42
+27	H-bonded turn	74
+28	none	45
+29	Beta ladder	99
+30	Beta ladder	125
+31	Beta ladder	90
+32	Beta ladder	20
+33	Beta ladder	23
+34	none	133
+35	none	1
+36	Beta bridge	88
+37	none	39
+38	Beta ladder	2
+39	Beta ladder	27
+40	Beta ladder	19
+41	Beta ladder	30
+42	Beta ladder	33
+43	Beta ladder	50
+44	Beta ladder	20
+45	none	70
+46	none	33
+47	Beta bridge	80
+48	none	36
+49	none	81
+50	H-bonded turn	115
+51	H-bonded turn	96
+52	H-bonded turn	109
+53	none	57
+54	none	55
+55	none	94

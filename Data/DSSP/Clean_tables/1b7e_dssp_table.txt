@@ -1,0 +1,36 @@
+Position	Secondary_structure	Solvent_accessibility
+70	none	105
+71	Alpha helix	35
+72	Alpha helix	36
+73	Alpha helix	48
+74	Alpha helix	47
+75	Alpha helix	51
+76	Alpha helix	92
+77	Alpha helix	58
+78	Alpha helix	15
+79	Alpha helix	1
+80	Alpha helix	92
+81	Alpha helix	122
+82	Alpha helix	6
+83	Alpha helix	16
+84	Alpha helix	137
+85	Alpha helix	77
+86	Alpha helix	0
+87	H-bonded turn	106
+88	H-bonded turn	80
+89	none	42
+90	Bend	99
+91	none	33
+92	Beta ladder	0
+93	Beta ladder	0
+94	Beta ladder	6
+95	Beta ladder	0
+96	Beta ladder	10
+97	Beta ladder	26
+98	Beta ladder	17
+99	Beta ladder	34
+100	Beta ladder	41
+101	none	37
+102	none	37
+103	none	208
+104	none	274

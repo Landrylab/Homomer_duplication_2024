@@ -1,0 +1,132 @@
+Position	Secondary_structure	Solvent_accessibility
+1	none	96
+2	none	88
+3	none	33
+4	none	64
+5	H-bonded turn	130
+6	H-bonded turn	69
+7	none	16
+8	Beta ladder	81
+9	Beta ladder	0
+10	none	6
+11	H-bonded turn	69
+12	H-bonded turn	56
+13	Bend	23
+14	Beta ladder	6
+15	Beta ladder	2
+16	Beta ladder	2
+17	Beta ladder	85
+18	Beta ladder	87
+19	Beta ladder	82
+20	H-bonded turn	66
+21	H-bonded turn	97
+22	Beta ladder	44
+23	Beta ladder	0
+24	Beta ladder	8
+25	Beta ladder	0
+26	Beta ladder	0
+27	Beta ladder	6
+28	none	0
+29	Alpha helix	34
+30	Alpha helix	9
+31	Alpha helix	13
+32	Alpha helix	22
+33	Alpha helix	95
+34	Alpha helix	102
+35	Alpha helix	21
+36	none	31
+37	Bend	74
+38	Beta ladder	3
+39	Beta ladder	2
+40	Beta ladder	43
+41	Beta ladder	3
+42	Beta ladder	49
+43	none	36
+44	none	18
+45	none	135
+46	H-bonded turn	75
+47	H-bonded turn	46
+48	none	59
+49	Beta ladder	90
+50	Beta ladder	11
+51	none	74
+52	Beta bridge	79
+53	H-bonded turn	41
+54	Bend	123
+55	Beta ladder	28
+56	Beta ladder	16
+57	Beta ladder	15
+58	Beta ladder	1
+59	Beta ladder	1
+60	Beta ladder	1
+61	Beta ladder	7
+62	Bend	58
+63	Bend	55
+64	none	8
+65	Beta ladder	7
+66	Beta ladder	39
+67	Beta ladder	31
+68	Beta ladder	3
+69	Beta ladder	52
+70	Beta bridge	1
+71	Bend	6
+72	Bend	1
+73	none	14
+74	Beta ladder	0
+75	Beta ladder	75
+76	Beta ladder	0
+77	Beta ladder	48
+78	Beta ladder	116
+79	Beta ladder	22
+80	none	17
+81	H-bonded turn	109
+82	Alpha helix	38
+83	Alpha helix	0
+84	Alpha helix	86
+85	Alpha helix	63
+86	none	126
+87	H-bonded turn	16
+88	H-bonded turn	30
+89	Alpha helix	32
+90	Alpha helix	1
+91	Alpha helix	37
+92	Alpha helix	91
+93	none	8
+94	H-bonded turn	7
+95	H-bonded turn	18
+96	H-bonded turn	125
+97	H-bonded turn	96
+98	H-bonded turn	1
+99	none	53
+100	none	0
+101	Beta ladder	0
+102	Beta ladder	66
+103	Beta ladder	0
+104	Beta ladder	107
+105	Beta ladder	25
+106	Bend	87
+107	Bend	51
+108	3/10 helix	73
+109	3/10 helix	122
+110	3/10 helix	26
+111	3/10 helix	28
+112	3/10 helix	164
+113	3/10 helix	88
+114	Bend	15
+115	Beta bridge	40
+116	none	12
+117	Alpha helix	13
+118	Alpha helix	158
+119	Alpha helix	117
+120	Alpha helix	1
+121	Alpha helix	54
+122	Alpha helix	132
+123	Alpha helix	65
+124	Alpha helix	10
+125	Alpha helix	125
+126	Alpha helix	118
+127	Alpha helix	88
+128	Alpha helix	47
+129	Alpha helix	66
+130	none	90
+131	none	209

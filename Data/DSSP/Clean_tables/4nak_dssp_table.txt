@@ -1,0 +1,13 @@
+Position	Secondary_structure	Solvent_accessibility
+76	none	177
+77	none	110
+78	none	25
+79	Beta ladder	2
+80	Beta ladder	0
+81	Beta ladder	0
+82	Beta ladder	0
+83	Beta ladder	0
+84	Beta ladder	12
+85	none	1
+86	none	37
+87	none	87

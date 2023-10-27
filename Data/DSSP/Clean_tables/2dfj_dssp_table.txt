@@ -1,0 +1,268 @@
+Position	Secondary_structure	Solvent_accessibility
+2	none	40
+3	Beta ladder	7
+4	Beta ladder	7
+5	Beta ladder	0
+6	Beta ladder	0
+7	none	1
+8	none	2
+9	none	2
+10	none	9
+11	Bend	0
+12	none	5
+13	Alpha helix	69
+14	Alpha helix	122
+15	Alpha helix	37
+16	Alpha helix	1
+17	Alpha helix	29
+18	Alpha helix	32
+19	Alpha helix	0
+20	Alpha helix	4
+21	Alpha helix	133
+22	Alpha helix	106
+23	H-bonded turn	13
+24	H-bonded turn	158
+25	none	22
+26	none	74
+27	H-bonded turn	56
+28	H-bonded turn	75
+29	H-bonded turn	84
+30	none	16
+31	Beta ladder	45
+32	Beta ladder	0
+33	Beta ladder	0
+34	Beta ladder	1
+35	none	0
+36	Bend	2
+37	none	2
+38	none	1
+39	Bend	1
+40	Bend	2
+41	Bend	87
+42	Bend	8
+43	Bend	113
+44	none	15
+45	Alpha helix	2
+46	Alpha helix	30
+47	Alpha helix	72
+48	Alpha helix	0
+49	Alpha helix	0
+50	Alpha helix	91
+51	Alpha helix	47
+52	Alpha helix	1
+53	Alpha helix	58
+54	Alpha helix	88
+55	H-bonded turn	16
+56	3/10 helix	40
+57	3/10 helix	164
+58	3/10 helix	24
+59	Beta ladder	14
+60	Beta ladder	63
+61	Beta ladder	0
+62	none	0
+63	none	1
+64	none	0
+65	Alpha helix	37
+66	Alpha helix	21
+67	Alpha helix	0
+68	Alpha helix	2
+69	Alpha helix	41
+70	Alpha helix	0
+71	Alpha helix	0
+72	Alpha helix	3
+73	Alpha helix	19
+74	Alpha helix	54
+75	H-bonded turn	33
+76	H-bonded turn	65
+77	Bend	50
+78	Bend	51
+79	none	83
+80	none	53
+81	none	58
+82	3/10 helix	17
+83	3/10 helix	24
+84	3/10 helix	4
+85	none	97
+86	none	4
+87	Alpha helix	65
+88	Alpha helix	75
+89	Alpha helix	2
+90	Alpha helix	42
+91	H-bonded turn	155
+92	Bend	11
+93	H-bonded turn	126
+94	H-bonded turn	37
+95	Alpha helix	4
+96	Alpha helix	94
+97	Alpha helix	111
+98	Alpha helix	1
+99	Alpha helix	0
+100	Alpha helix	43
+101	Alpha helix	46
+102	Alpha helix	0
+103	Alpha helix	12
+104	H-bonded turn	126
+105	Bend	34
+106	none	28
+107	Bend	3
+108	Beta ladder	17
+109	Beta ladder	22
+110	Beta ladder	39
+111	Beta ladder	20
+112	H-bonded turn	84
+113	H-bonded turn	170
+114	H-bonded turn	53
+115	H-bonded turn	72
+116	Beta ladder	1
+117	Beta ladder	0
+118	Beta ladder	0
+119	Beta ladder	0
+120	Bend	0
+121	Bend	1
+122	none	0
+123	none	3
+124	none	0
+125	H-bonded turn	19
+126	H-bonded turn	51
+127	none	0
+128	none	75
+129	Alpha helix	22
+130	Alpha helix	98
+131	Alpha helix	18
+132	Alpha helix	0
+133	Alpha helix	86
+134	Alpha helix	92
+135	Alpha helix	2
+136	Alpha helix	3
+137	Alpha helix	49
+138	Alpha helix	69
+139	Alpha helix	1
+140	Alpha helix	48
+141	Alpha helix	63
+142	Alpha helix	42
+143	Alpha helix	0
+144	Alpha helix	42
+145	Bend	42
+146	H-bonded turn	144
+147	H-bonded turn	64
+148	Alpha helix	22
+149	Alpha helix	30
+150	Alpha helix	159
+151	Alpha helix	12
+152	Alpha helix	4
+153	Alpha helix	98
+154	Alpha helix	22
+155	H-bonded turn	38
+156	H-bonded turn	75
+157	none	19
+158	Bend	48
+159	none	109
+160	none	27
+161	none	32
+162	Bend	61
+163	none	43
+164	none	38
+165	H-bonded turn	71
+166	H-bonded turn	140
+167	none	37
+168	none	163
+169	Alpha helix	46
+170	Alpha helix	110
+171	Alpha helix	21
+172	Alpha helix	53
+173	Alpha helix	38
+174	Alpha helix	67
+175	Alpha helix	0
+176	Alpha helix	1
+177	Alpha helix	1
+178	Alpha helix	6
+179	Alpha helix	0
+180	Alpha helix	1
+181	Alpha helix	1
+182	H-bonded turn	76
+183	none	0
+184	none	44
+185	Beta ladder	1
+186	Beta ladder	0
+187	Beta ladder	51
+188	H-bonded turn	94
+189	H-bonded turn	86
+190	Beta bridge	7
+191	Beta ladder	52
+192	Beta ladder	4
+193	Beta ladder	8
+194	Bend	20
+195	Bend	161
+196	none	18
+197	none	55
+198	Bend	23
+199	none	38
+200	3/10 helix	51
+201	3/10 helix	103
+202	3/10 helix	27
+203	none	25
+204	none	35
+205	Bend	77
+206	Bend	92
+207	none	14
+208	Beta ladder	31
+209	Beta ladder	16
+210	3/10 helix	4
+211	3/10 helix	17
+212	3/10 helix	56
+213	Bend	24
+214	none	125
+215	none	10
+216	H-bonded turn	67
+217	H-bonded turn	3
+218	H-bonded turn	38
+219	H-bonded turn	166
+220	H-bonded turn	115
+221	Bend	25
+222	Beta ladder	27
+223	Beta ladder	0
+224	Beta ladder	0
+225	Beta ladder	0
+226	none	1
+227	none	11
+228	none	3
+229	3/10 helix	11
+230	3/10 helix	34
+231	3/10 helix	6
+232	H-bonded turn	124
+233	H-bonded turn	25
+234	none	136
+235	Bend	67
+236	none	42
+237	none	53
+238	H-bonded turn	109
+239	H-bonded turn	21
+240	Beta ladder	15
+241	Beta ladder	38
+242	Beta ladder	12
+243	none	1
+244	none	4
+245	none	33
+246	none	3
+247	H-bonded turn	1
+248	H-bonded turn	36
+249	H-bonded turn	148
+250	H-bonded turn	79
+251	Bend	28
+252	Beta ladder	25
+253	Beta ladder	3
+254	Beta ladder	12
+255	Beta ladder	1
+256	Beta ladder	0
+257	Beta ladder	58
+258	H-bonded turn	21
+259	H-bonded turn	111
+260	H-bonded turn	78
+261	H-bonded turn	83
+262	Beta ladder	89
+263	Beta ladder	112
+264	Beta ladder	30
+265	Beta ladder	68
+266	Beta ladder	41
+267	Beta ladder	82
+268	none	76

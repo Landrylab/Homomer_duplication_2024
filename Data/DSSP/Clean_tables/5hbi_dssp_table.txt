@@ -1,0 +1,146 @@
+Position	Secondary_structure	Solvent_accessibility
+2	none	89
+3	Alpha helix	9
+4	Alpha helix	134
+5	Alpha helix	114
+6	Alpha helix	18
+7	Alpha helix	8
+8	Alpha helix	75
+9	H-bonded turn	108
+10	none	17
+11	none	69
+12	Alpha helix	75
+13	Alpha helix	124
+14	Alpha helix	17
+15	Alpha helix	55
+16	Alpha helix	123
+17	Alpha helix	30
+18	Alpha helix	0
+19	Alpha helix	82
+20	Alpha helix	59
+21	Alpha helix	0
+22	Alpha helix	14
+23	Alpha helix	166
+24	Alpha helix	58
+25	Alpha helix	6
+26	3/10 helix	6
+27	3/10 helix	98
+28	3/10 helix	74
+29	Alpha helix	35
+30	Alpha helix	61
+31	Alpha helix	19
+32	Alpha helix	13
+33	Alpha helix	0
+34	Alpha helix	9
+35	Alpha helix	32
+36	Alpha helix	7
+37	Alpha helix	2
+38	Alpha helix	53
+39	Alpha helix	30
+40	Alpha helix	13
+41	Alpha helix	10
+42	Alpha helix	58
+43	Alpha helix	73
+44	none	30
+45	3/10 helix	135
+46	3/10 helix	112
+47	3/10 helix	7
+48	3/10 helix	60
+49	3/10 helix	43
+50	3/10 helix	97
+51	3/10 helix	51
+52	3/10 helix	153
+53	3/10 helix	96
+54	3/10 helix	5
+55	none	50
+56	none	93
+57	3/10 helix	13
+58	3/10 helix	100
+59	3/10 helix	102
+60	3/10 helix	10
+61	3/10 helix	82
+62	3/10 helix	77
+63	none	10
+64	Alpha helix	85
+65	Alpha helix	103
+66	Alpha helix	0
+67	Alpha helix	21
+68	Alpha helix	0
+69	Alpha helix	33
+70	Alpha helix	0
+71	Alpha helix	1
+72	Alpha helix	26
+73	Alpha helix	42
+74	Alpha helix	1
+75	Alpha helix	14
+76	Alpha helix	15
+77	Alpha helix	26
+78	Alpha helix	35
+79	Alpha helix	0
+80	Alpha helix	12
+81	Alpha helix	6
+82	Alpha helix	67
+83	H-bonded turn	21
+84	H-bonded turn	4
+85	H-bonded turn	119
+86	none	50
+87	Alpha helix	65
+88	Alpha helix	100
+89	Alpha helix	8
+90	Alpha helix	3
+91	Alpha helix	1
+92	Alpha helix	5
+93	Alpha helix	0
+94	Alpha helix	0
+95	Alpha helix	63
+96	Alpha helix	29
+97	Alpha helix	36
+98	Alpha helix	1
+99	Alpha helix	48
+100	Alpha helix	31
+101	Alpha helix	63
+102	Alpha helix	79
+103	H-bonded turn	96
+104	H-bonded turn	122
+105	H-bonded turn	172
+106	none	24
+107	none	52
+108	Alpha helix	34
+109	Alpha helix	77
+110	Alpha helix	42
+111	Alpha helix	38
+112	3/10 helix	15
+113	3/10 helix	58
+114	3/10 helix	29
+115	Alpha helix	44
+116	Alpha helix	33
+117	Alpha helix	0
+118	Alpha helix	8
+119	Alpha helix	78
+120	Alpha helix	107
+121	Alpha helix	7
+122	Alpha helix	0
+123	Alpha helix	60
+124	Alpha helix	90
+125	H-bonded turn	91
+126	H-bonded turn	156
+127	none	31
+128	none	40
+129	Alpha helix	104
+130	Alpha helix	123
+131	Alpha helix	42
+132	Alpha helix	7
+133	Alpha helix	91
+134	Alpha helix	5
+135	Alpha helix	1
+136	Alpha helix	32
+137	Alpha helix	75
+138	Alpha helix	3
+139	Alpha helix	12
+140	Alpha helix	36
+141	Alpha helix	0
+142	Alpha helix	2
+143	Alpha helix	49
+144	Alpha helix	43
+145	H-bonded turn	21
+146	none	68

@@ -1,0 +1,122 @@
+Position	Secondary_structure	Solvent_accessibility
+1	none	0
+2	Alpha helix	35
+3	Alpha helix	46
+4	Alpha helix	19
+5	Alpha helix	26
+6	Alpha helix	30
+7	Alpha helix	80
+8	Alpha helix	0
+9	Alpha helix	6
+10	Alpha helix	77
+11	Alpha helix	95
+12	Alpha helix	6
+13	Alpha helix	16
+14	Bend	59
+15	Bend	67
+16	none	14
+17	Alpha helix	6
+18	Alpha helix	30
+19	Alpha helix	10
+20	Alpha helix	98
+21	Bend	12
+22	Bend	16
+23	Bend	32
+24	Beta bridge	1
+25	H-bonded turn	14
+26	H-bonded turn	9
+27	H-bonded turn	12
+28	Beta bridge	5
+29	Bend	38
+30	H-bonded turn	95
+31	H-bonded turn	28
+32	none	30
+33	none	73
+34	Bend	1
+35	none	149
+36	none	18
+37	none	67
+38	Bend	29
+39	Alpha helix	34
+40	Alpha helix	0
+41	Alpha helix	0
+42	Alpha helix	94
+43	Alpha helix	3
+44	Alpha helix	10
+45	Alpha helix	11
+46	Alpha helix	80
+47	Alpha helix	12
+48	Alpha helix	70
+49	Alpha helix	14
+50	Alpha helix	42
+51	Alpha helix	17
+52	Alpha helix	69
+53	H-bonded turn	167
+54	none	18
+55	none	143
+56	Bend	72
+57	Bend	28
+58	none	35
+59	H-bonded turn	17
+60	H-bonded turn	58
+61	H-bonded turn	18
+62	none	65
+63	none	109
+64	none	8
+65	none	155
+66	Beta ladder	55
+67	Beta ladder	56
+68	Beta ladder	37
+69	Beta ladder	112
+70	H-bonded turn	176
+71	H-bonded turn	19
+72	Beta ladder	116
+73	Beta ladder	7
+74	Beta ladder	81
+75	Beta ladder	6
+76	none	86
+77	none	84
+78	Bend	75
+79	none	63
+80	Alpha helix	105
+81	Alpha helix	19
+82	Alpha helix	11
+83	Alpha helix	66
+84	Alpha helix	98
+85	Alpha helix	0
+86	Alpha helix	0
+87	Alpha helix	65
+88	Alpha helix	4
+89	Alpha helix	0
+90	Alpha helix	50
+91	Alpha helix	55
+92	Alpha helix	4
+93	Alpha helix	0
+94	Alpha helix	60
+95	Alpha helix	34
+96	Alpha helix	3
+97	Alpha helix	133
+98	Alpha helix	110
+99	H-bonded turn	48
+100	3/10 helix	110
+101	3/10 helix	136
+102	3/10 helix	79
+103	none	44
+104	none	64
+105	3/10 helix	105
+106	3/10 helix	136
+107	3/10 helix	37
+108	Beta bridge	71
+109	H-bonded turn	82
+110	none	31
+111	none	74
+112	3/10 helix	155
+113	3/10 helix	151
+114	3/10 helix	55
+115	Bend	10
+116	none	121
+117	Bend	178
+118	none	58
+119	none	41
+120	none	98
+121	none	133
