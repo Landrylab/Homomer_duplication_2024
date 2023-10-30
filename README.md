@@ -29,32 +29,36 @@ once it is decompressed.
 
 Once the files are decompressed, the folder should have the following structure:
 
-└── Homomer\_duplication\_2023/
-    └── Results\_simulations/
-        └── Results\_pdup1/
-            ├── Parametric\_simulations/
-            │   ├── 008\_simulations\_parametric\_gene\_exp\_pdup1\_60opt
-            │   ├── 008\_simulations\_parametric\_gene\_exp\_pdup1\_80opt
-            │   ├── 008\_simulations\_parametric\_hetBias\_pdup1\_60opt
-            │   ├── 008\_simulations\_parametric\_hetBias\_pdup1\_80opt
-            │   ├── 008\_simulations\_parametric\_sd\_final\_60opt
-            │   └── 008\_simulations\_parametric\_sd\_final\_80opt
-            └── Simulations\_with\_structures/
-                ├── 008\_biased\_simulations\_60opt
-                ├── 008\_biased\_simulations\_80opt
-                ├── 008\_simulations\_60opt
-                ├── 008\_simulations\_80opt
-                ├── 008\_simulations\_gene\_expression\_pdup1\_60opt
-                └── 008\_simulations\_gene\_expression\_pdup1\_80opt
+├── Homomer\_duplication\_2023
+│   ├── Results\_simulations
+│   │   ├── Results\_pdup1
+│   │   │   ├── Parametric\_simulations
+│   │   │   │   ├── 008\_simulations\_parametric\_gene\_exp\_pdup1\_60opt
+│   │   │   │   ├── 008\_simulations\_parametric\_gene\_exp\_pdup1\_80opt
+│   │   │   │   ├── 008\_simulations\_parametric\_hetBias\_pdup1\_60opt
+│   │   │   │   ├── 008\_simulations\_parametric\_hetBias\_pdup1\_80opt
+│   │   │   │   ├── 008\_simulations\_parametric\_sd\_final\_60opt
+│   │   │   │   ├── 008\_simulations\_parametric\_sd\_final\_80opt
+│   │   │   ├── Simulations\_with\_structures/
+│   │   │   │   ├── 008\_biased\_simulations\_60opt
+│   │   │   │   ├── 008\_biased\_simulations\_80opt
+│   │   │   │   ├── 008\_simulations\_60opt
+│   │   │   │   ├── 008\_simulations\_80opt
+│   │   │   │   ├── 008\_simulations\_gene\_expression\_pdup1\_60opt
+│   │   │   │   ├── 008\_simulations\_gene\_expression\_pdup1\_80opt
+
 
 - Results\_solution\_space: Use this folder to store the results of our exploration of the solution space of the system
 of equations. These can be downloaded from Zenodo and decompressed. Download link:
 
 
 Once the files are decompressed, the folder should have the following structure:
-└── Homomer\_duplication\_2023/
-    └── Results\_solution\_space/
-        └── solutionSpace\_bindingEnergy.tsv
-        └── solutionSpace\_hetBias\_diff\_binding.tsv
-        └── solutionSpace\_subunitStab.tsv
-        └── solutionSpace\_syn\_ratio\_diff\_binding\_log2.tsv
+
+├── Homomer\_duplication\_2023
+│   ├── Results\_solution\_space
+│   │   ├── solutionSpace\_bindingEnergy.tsv
+│   │   ├── solutionSpace\_hetBias\_diff\_binding.tsv
+│   │   ├── solutionSpace\_subunitStab.tsv
+│   │   ├── solutionSpace\_syn\_ratio\_diff\_binding\_log2.tsv
+
+
