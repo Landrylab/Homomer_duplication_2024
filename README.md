@@ -17,6 +17,7 @@ The data from this repository should be uncompressed and organized as follows:
 	- all\_mut\_matrices.tsv: Should be uncompressed and moved to Homomer\_duplication\_2023/Data
 	- Results_pdup1: Should be uncompressed and moved to Homomer\_duplication\_2023/Results\_simulations
 	- Results\_solution\_space: Should be uncompressed and moved to Homomer\_duplication\_2023
+	- Structures: Should be uncompressed and moved to Homomer\_duplication\_2023/Data
 
 - Figures: pdf versions of the main and supplementary figures
 
@@ -24,41 +25,10 @@ The data from this repository should be uncompressed and organized as follows:
 to the order in which they were used in the analysis.
 
 - Results\_simulations: Use this folder to store the results of the simulations. This folder will contain the Results\_pdup1 from Zenodo
-once it is decompressed.
-
-
-Once the files are decompressed, the folder should have the following structure:
-
-├── Homomer\_duplication\_2023
-│   ├── Results\_simulations
-│   │   ├── Results\_pdup1
-│   │   │   ├── Parametric\_simulations
-│   │   │   │   ├── 008\_simulations\_parametric\_gene\_exp\_pdup1\_60opt
-│   │   │   │   ├── 008\_simulations\_parametric\_gene\_exp\_pdup1\_80opt
-│   │   │   │   ├── 008\_simulations\_parametric\_hetBias\_pdup1\_60opt
-│   │   │   │   ├── 008\_simulations\_parametric\_hetBias\_pdup1\_80opt
-│   │   │   │   ├── 008\_simulations\_parametric\_sd\_final\_60opt
-│   │   │   │   ├── 008\_simulations\_parametric\_sd\_final\_80opt
-│   │   │   ├── Simulations\_with\_structures/
-│   │   │   │   ├── 008\_biased\_simulations\_60opt
-│   │   │   │   ├── 008\_biased\_simulations\_80opt
-│   │   │   │   ├── 008\_simulations\_60opt
-│   │   │   │   ├── 008\_simulations\_80opt
-│   │   │   │   ├── 008\_simulations\_gene\_expression\_pdup1\_60opt
-│   │   │   │   ├── 008\_simulations\_gene\_expression\_pdup1\_80opt
-
+once it is decompressed. The two subfolders inside contain the results of the different simulations for both the parametric and single
+structure regimes.
 
 - Results\_solution\_space: Use this folder to store the results of our exploration of the solution space of the system
-of equations. These can be downloaded from Zenodo and decompressed. Download link:
-
-
-Once the files are decompressed, the folder should have the following structure:
-
-├── Homomer\_duplication\_2023
-│   ├── Results\_solution\_space
-│   │   ├── solutionSpace\_bindingEnergy.tsv
-│   │   ├── solutionSpace\_hetBias\_diff\_binding.tsv
-│   │   ├── solutionSpace\_subunitStab.tsv
-│   │   ├── solutionSpace\_syn\_ratio\_diff\_binding\_log2.tsv
+of equations. These can be downloaded from Zenodo and decompressed. 
 
 
