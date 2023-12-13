@@ -19,13 +19,6 @@ library(agricolae)
 theme_set(theme_cowplot() +
             theme(panel.background = element_rect(fill = 'white'),
                   plot.background = element_rect(fill = 'white'),
-                  
-                  # axis.text = element_text(size = 18),
-                  # axis.title = element_text(size = 20, face = 'bold'),
-                  # strip.text = element_text(size = 20, face = 'bold'),
-                  # legend.text = element_text(size = 18), 
-                  # legend.title = element_text(size = 20))
-                  
                   axis.text = element_text(size = 10),
                   axis.title = element_text(size = 12, face = 'bold'),
                   strip.text = element_text(size = 12, face = 'bold'),
@@ -127,6 +120,7 @@ for(i in 1:length(row_labels)){
   
 }
 
+
 p_stab_HET <- Heatmap(
   data_stab_wide[seq(from = 4, to = 2000, by = 4), seq(from = 4, to = 2000, by = 4)],
   cluster_columns = F, cluster_rows = F, 
@@ -138,10 +132,9 @@ p_stab_HET <- Heatmap(
   border = T,
   row_title = expression(paste(bold('\u0394'),
                                bold(G['fold,A']), 
-                               bold(' (kcal/mol)'), sep = '')),
+                               sep = '')),
   column_title = expression(paste(bold('\u0394'),
-                                  bold(G['fold,B']), 
-                                  bold(' (kcal/mol)'), sep = '')),
+                                  bold(G['fold,B']), sep = '')),
   row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
   column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
   column_title_side = 'bottom',
@@ -152,7 +145,8 @@ p_stab_HET <- Heatmap(
   show_heatmap_legend = TRUE,
   heatmap_legend_param = list(
     at = c(0, 20, 40, 60, 80, 100),
-    title = "Percentage of HET AB (%)", 
+    # title = "Percentage of HET AB (%)", 
+    title = '',
     title_gp = gpar(fontsize = legend_title_size),
     legend_height = unit(legend_height, "cm"),
     grid_width = unit(legend_width, "cm"),
@@ -166,10 +160,8 @@ p_stab_HET <- Heatmap(
   rect_gp = gpar(col = 'transparent',
                  lwd = 0
   ), use_raster = TRUE
-  )
+)
 p_stab_HET
-
-
 
 #### Figure 1D ####
 #### Repeat for HM BB ####
@@ -220,10 +212,10 @@ p_stab_HM_BB <- Heatmap(
   border = T,
   row_title = expression(paste(bold('\u0394'),
                                bold(G['fold,A']), 
-                               bold(' (kcal/mol)'), sep = '')),
+                               sep = '')),
   column_title = expression(paste(bold('\u0394'),
                                   bold(G['fold,B']), 
-                                  bold(' (kcal/mol)'), sep = '')),
+                                  sep = '')),
   row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
   column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
   column_title_side = 'bottom',
@@ -234,7 +226,8 @@ p_stab_HM_BB <- Heatmap(
   show_heatmap_legend = TRUE,
   heatmap_legend_param = list(
     at = c(0, 20, 40, 60, 80, 100),
-    title = "Percentage of HM BB (%)", 
+    # title = "Percentage of HM BB (%)", 
+    title = '', 
     title_gp = gpar(fontsize = legend_title_size),
     legend_height = unit(legend_height, "cm"),
     grid_width = unit(legend_width, "cm"),
@@ -304,10 +297,10 @@ p_stab_total_complexes <- Heatmap(
   border = T,
   row_title = expression(paste(bold('\u0394'),
                                bold(G['fold,A']), 
-                               bold(' (kcal/mol)'), sep = '')),
+                               sep = '')),
   column_title = expression(paste(bold('\u0394'),
                                   bold(G['fold,B']), 
-                                  bold(' (kcal/mol)'), sep = '')),
+                                  sep = '')),
   row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
   column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
   column_title_side = 'bottom',
@@ -318,7 +311,8 @@ p_stab_total_complexes <- Heatmap(
   show_heatmap_legend = TRUE,
   heatmap_legend_param = list(
     at = c(0, 20, 40, 60, 80, 100),
-    title = 'Total activity',
+    # title = 'Total activity',
+    title = '',
     title_gp = gpar(fontsize = legend_title_size),
     legend_height = unit(legend_height, "cm"),
     grid_width = unit(legend_width, "cm"),
@@ -391,10 +385,10 @@ p_stab_logw <- Heatmap(
   border = T,
   row_title = expression(paste(bold('\u0394'),
                                bold(G['fold,A']), 
-                               bold(' (kcal/mol)'), sep = '')),
+                               sep = '')),
   column_title = expression(paste(bold('\u0394'),
                                   bold(G['fold,B']), 
-                                  bold(' (kcal/mol)'), sep = '')),
+                                  sep = '')),
   row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
   column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
   column_title_side = 'bottom',
@@ -404,7 +398,8 @@ p_stab_logw <- Heatmap(
   column_names_gp = gpar(fontsize=column_name_size, fontface='bold', align = 'left'),
   show_heatmap_legend = TRUE,
   heatmap_legend_param = list(
-    title = 'log2(Fitness)',
+    # title = 'log2(Fitness)',
+    title = '',
     title_gp = gpar(fontsize = legend_title_size),
     legend_height = unit(legend_height, "cm"),
     grid_width = unit(legend_width, "cm"),
@@ -471,7 +466,6 @@ for(i in 1:length(row_labels)){
   new_row_labels[i] = new_val
   
 }
-
 p_binding_HET <- Heatmap(
   data_binding_wide,
   cluster_columns = F, cluster_rows = F, 
@@ -483,10 +477,10 @@ p_binding_HET <- Heatmap(
   border = T,
   row_title = expression(paste(bold('\u0394'),
                                bold(G['bind, HET AB']), 
-                               bold(' (kcal/mol)'), sep = '')),
+                               sep = '')),
   column_title = expression(paste(bold('\u0394'),
                                   bold(G['bind,HM BB']), 
-                                  bold(' (kcal/mol)'), sep = '')),
+                                  sep = '')),
   row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
   column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
   column_title_side = 'bottom',
@@ -497,7 +491,8 @@ p_binding_HET <- Heatmap(
   show_heatmap_legend = TRUE,
   heatmap_legend_param = list(
     at = c(0, 20, 40, 60, 80, 100),
-    title = "Percentage of HET AB (%)", 
+    # title = "Percentage of HET AB (%)", 
+    title = '',
     title_gp = gpar(fontsize = legend_title_size),
     legend_height = unit(legend_height, "cm"),
     grid_width = unit(legend_width, "cm"),
@@ -568,10 +563,10 @@ p_binding_HM_BB <- Heatmap(
   border = T,
   row_title = expression(paste(bold('\u0394'),
                                bold(G['bind,HET AB']), 
-                               bold(' (kcal/mol)'), sep = '')),
+                               sep = '')),
   column_title = expression(paste(bold('\u0394'),
                                   bold(G['bind,HM BB']), 
-                                  bold(' (kcal/mol)'), sep = '')),
+                                  sep = '')),
   row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
   column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
   column_title_side = 'bottom',
@@ -582,7 +577,8 @@ p_binding_HM_BB <- Heatmap(
   show_heatmap_legend = TRUE,
   heatmap_legend_param = list(
     at = c(0, 20, 40, 60, 80, 100),
-    title = "Percentage of HM BB (%)", 
+    # title = "Percentage of HM BB (%)", 
+    title = '',
     title_gp = gpar(fontsize = legend_title_size),
     legend_height = unit(legend_height, "cm"),
     grid_width = unit(legend_width, "cm"),
@@ -656,10 +652,10 @@ p_binding_total_complexes <- Heatmap(
   border = T,
   row_title = expression(paste(bold('\u0394'),
                                bold(G['bind,HET AB']), 
-                               bold(' (kcal/mol)'), sep = '')),
+                               sep = '')),
   column_title = expression(paste(bold('\u0394'),
                                   bold(G['bind,HM BB']), 
-                                  bold(' (kcal/mol)'), sep = '')),
+                                  sep = '')),
   row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
   column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
   column_title_side = 'bottom',
@@ -670,7 +666,8 @@ p_binding_total_complexes <- Heatmap(
   show_heatmap_legend = TRUE,
   heatmap_legend_param = list(
     at = c(0, 20, 40, 60, 80, 100),
-    title = 'Total activity',
+    # title = 'Total activity',
+    title = '', 
     title_gp = gpar(fontsize = legend_title_size),
     legend_height = unit(legend_height, "cm"),
     grid_width = unit(legend_width, "cm"),
@@ -746,10 +743,10 @@ p_binding_logw <- Heatmap(
   border = T,
   row_title = expression(paste(bold('\u0394'),
                                bold(G['bind,HET AB']), 
-                               bold(' (kcal/mol)'), sep = '')),
+                               sep = '')),
   column_title = expression(paste(bold('\u0394'),
                                   bold(G['bind,HM BB']), 
-                                  bold(' (kcal/mol)'), sep = '')),
+                                  sep = '')),
   row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
   column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
   column_title_side = 'bottom',
@@ -759,7 +756,8 @@ p_binding_logw <- Heatmap(
   column_names_gp = gpar(fontsize=column_name_size, fontface='bold', align = 'left'),
   show_heatmap_legend = TRUE,
   heatmap_legend_param = list(
-    title = 'log2(Fitness)',
+    # title = 'log2(Fitness)',
+    title = '',
     title_gp = gpar(fontsize = legend_title_size),
     legend_height = unit(legend_height, "cm"),
     grid_width = unit(legend_width, "cm"),
@@ -776,7 +774,7 @@ p_binding_logw <- Heatmap(
 )
 p_binding_logw
 
-#### New version with new panel to explain fitness ####
+#### Put panels together ####
 
 p_fig1_top <- plot_grid(fig_1A, fig_1B, ncol = 2, labels = c('A', 'B'), 
                         label_fontface = 'bold', label_size = panel_label_size)
@@ -966,9 +964,7 @@ p_figS1D <- p_figS1_axes +
   )
 p_figS1D
 
-## Fig. S1E: Unintuitive scenario 1 - HET binding affinity is close
-## but stronger to the HM with weakest affinity, while the other HM has a 
-## much stronger binding affinity than both of them
+## Fig. S1E
 p_figS1E <- p_figS1_axes + 
   theme(panel.grid.major = element_blank(), 
         plot.title = element_text(hjust = 0.5, size = 7)) +
@@ -982,9 +978,7 @@ p_figS1E <- p_figS1_axes +
   )
 p_figS1E
 
-## Fig. S1F: Unintuitive scenario 1 - HET binding affinity is close
-## but stronger to the HM with weakest affinity, while the other HM has a 
-## much stronger binding affinity than both of them
+## Fig. S1F
 p_figS1F <- p_figS1_axes + 
   theme(panel.grid.major = element_blank(), 
         plot.title = element_text(hjust = 0.5, size = 7)) +
@@ -1006,6 +1000,371 @@ p_figS1 <- plot_grid(NULL, p_figS1B, p_figS1C,
 )
 ggsave(p_figS1, device = cairo_pdf, width = 20, height = 12, units = 'cm',  dpi = 300, 
        filename = 'Figures/Supplementary_figures/Fig_S1_noPanelA_Empty.pdf')
+
+#### Figure S2 ####
+
+# Load the data on binding affinity
+data_binding <- read_delim('Data/Results_solution_space/results_bindingEnergy_completeRange.tsv', delim = '\t')
+
+# Add columns for the percentages of complexes, without considering monomers
+data_binding %<>% mutate(total_complexes = (cAA + cBB + cAB)) %>%
+  mutate(pct_AA = 100 * cAA / (cAA + cBB + cAB),
+         pct_AB = 100 * cAB / (cAA + cBB + cAB),
+         pct_BB = 100 * cBB / (cAA + cBB + cAB)) %>%
+  mutate(pct_AA = ifelse(total_complexes > 80, NA, pct_AA), 
+         pct_AB = ifelse(total_complexes > 80, NA, pct_AB), 
+         pct_BB = ifelse(total_complexes > 80, NA, pct_BB)
+  )
+
+data_binding_wide <- data_binding %>% 
+  mutate(total_complexes = cAA + cBB + cAB) %>%
+  select(new_binding_AB, new_binding_AA, pct_AB) %>%
+  arrange(desc(new_binding_AB)) %>%
+  pivot_wider(names_from = new_binding_AA, values_from = pct_AB)
+
+# Move the first column to the index
+first_column <- data_binding_wide$new_binding_AB
+data_binding_wide <- as.matrix(data_binding_wide[, 2:ncol(data_binding_wide)])
+rownames(data_binding_wide) <- first_column
+
+#### Draw the heatmap ####
+# Define column labels
+column_labels = seq(from = -15, to = 14.9, by = 0.1)
+new_column_labels = column_labels
+for(i in 1:length(column_labels)){
+  
+  cur_val = column_labels[i]
+  new_val = ifelse(mod(cur_val, 4) == 0 && cur_val != -15,
+                   toString(cur_val), '')
+  
+  new_column_labels[i] = new_val
+  
+}
+
+# Define row labels
+row_labels = rev(seq(from = -15, to = 14.9, by = 0.1))
+
+new_row_labels = row_labels
+for(i in 1:length(row_labels)){
+  
+  cur_val = row_labels[i]
+  new_val = ifelse(mod(cur_val, 4) == 0 && cur_val != -15,
+                   toString(cur_val), '')
+  
+  new_row_labels[i] = new_val
+  
+}
+
+p_binding_HET <- Heatmap(
+  data_binding_wide,
+  cluster_columns = F, cluster_rows = F, 
+  col = colorRamp2(
+    breaks = c(0, 20, 40, 60, 80, 100),
+    colors = viridis(6)),
+  show_column_names = T, row_names_side = 'left',
+  width=unit(heatmap_width, 'cm'), height = unit(heatmap_height, 'cm'),
+  border = T,
+  row_title = expression(paste(bold('\u0394'),
+                               bold(G['bind, HET AB']), 
+                               bold(' (kcal/mol)'), sep = '')),
+  column_title = expression(paste(bold('\u0394'),
+                                  bold(G['bind,HM AA']), 
+                                  bold(' (kcal/mol)'), sep = '')),
+  row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
+  column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
+  column_title_side = 'bottom',
+  row_names_rot = 90, 
+  row_names_centered = T,
+  row_names_gp = gpar(fontsize=row_name_size, fontface = 'bold', align = 'left'),
+  column_names_gp = gpar(fontsize=column_name_size, fontface='bold', align = 'left'),
+  show_heatmap_legend = TRUE,
+  heatmap_legend_param = list(
+    at = c(0, 20, 40, 60, 80, 100),
+    title = "Percentage of HET AB (%)", 
+    title_gp = gpar(fontsize = legend_title_size),
+    legend_height = unit(legend_height, "cm"),
+    grid_width = unit(legend_width, "cm"),
+    border='black',
+    lwd=1.7,
+    labels_gp = gpar(fontsize = legend_label_size),
+    title_position = "leftcenter-rot"
+  ), 
+  row_labels = new_row_labels,
+  column_labels = new_column_labels, 
+  rect_gp = gpar(col = 'transparent',
+                 lwd = 0
+  ), use_raster = TRUE, 
+  name = 'p_binding_HET'
+)
+p_binding_HET
+
+#### Percentage of HM BB ####
+
+data_binding_wide <- data_binding %>% select(new_binding_AB, new_binding_AA, pct_BB) %>%
+  arrange(desc(new_binding_AB)) %>%
+  pivot_wider(names_from = new_binding_AA, values_from = pct_BB)
+
+# Move the first column to the index
+first_column <- data_binding_wide$new_binding_AB
+data_binding_wide <- as.matrix(data_binding_wide[, 2:ncol(data_binding_wide)])
+rownames(data_binding_wide) <- first_column
+
+#### Draw the heatmap ####
+# Define column labels
+column_labels = seq(from = -15, to = 14.9, by = 0.1)
+
+new_column_labels = column_labels
+for(i in 1:length(column_labels)){
+  
+  cur_val = column_labels[i]
+  new_val = ifelse(mod(cur_val, 4) == 0 && cur_val != -15,
+                   toString(cur_val), '')
+  
+  new_column_labels[i] = new_val
+  
+}
+
+# Define row labels
+row_labels = rev(seq(from = -15, to = 14.9, by = 0.1))
+
+new_row_labels = row_labels
+for(i in 1:length(row_labels)){
+  
+  cur_val = row_labels[i]
+  new_val = ifelse(mod(cur_val, 4) == 0 && cur_val != -15,
+                   toString(cur_val), '')
+  
+  new_row_labels[i] = new_val
+  
+}
+
+p_binding_HM_BB <- Heatmap(
+  data_binding_wide,
+  cluster_columns = F, cluster_rows = F, 
+  col = colorRamp2(
+    breaks = c(0, 20, 40, 60, 80, 100),
+    colors = viridis(6)),
+  show_column_names = T, row_names_side = 'left',
+  width=unit(heatmap_width, 'cm'), height = unit(heatmap_height, 'cm'),
+  border = T,
+  row_title = expression(paste(bold('\u0394'),
+                               bold(G['bind,HET AB']), 
+                               bold(' (kcal/mol)'), sep = '')),
+  column_title = expression(paste(bold('\u0394'),
+                                  bold(G['bind,HM AA']), 
+                                  bold(' (kcal/mol)'), sep = '')),
+  row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
+  column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
+  column_title_side = 'bottom',
+  row_names_rot = 90, 
+  row_names_centered = T,
+  row_names_gp = gpar(fontsize=row_name_size, fontface = 'bold', align = 'left'),
+  column_names_gp = gpar(fontsize=column_name_size, fontface='bold', align = 'left'),
+  show_heatmap_legend = TRUE,
+  heatmap_legend_param = list(
+    at = c(0, 20, 40, 60, 80, 100),
+    title = "Percentage of HM BB (%)", 
+    title_gp = gpar(fontsize = legend_title_size),
+    legend_height = unit(legend_height, "cm"),
+    grid_width = unit(legend_width, "cm"),
+    border='black',
+    lwd=1.7,
+    labels_gp = gpar(fontsize = legend_label_size),
+    title_position = "leftcenter-rot"
+  ), 
+  row_labels = new_row_labels,
+  column_labels = new_column_labels, 
+  rect_gp = gpar(col = 'transparent',
+                 lwd = 0
+  ), use_raster = TRUE
+)
+p_binding_HM_BB
+
+#### A figure for total concentration of complexes ####
+
+data_binding_wide <- data_binding %>% 
+  mutate(total_activity = 0.1*cA + 0.1*cB + 1*cAA + 1*cAB + 1*cBB) %>%
+  mutate(total_activity = ifelse(or(total_complexes > 80, total_activity == 0), NA, total_activity)
+  ) %>%
+  select(new_binding_AB, new_binding_AA, total_activity) %>%
+  arrange(desc(new_binding_AB)) %>%
+  pivot_wider(names_from = new_binding_AA, values_from = total_activity)
+
+
+# Move the first column to the index
+first_column <- data_binding_wide$new_binding_AB
+data_binding_wide <- as.matrix(data_binding_wide[, 2:ncol(data_binding_wide)])
+rownames(data_binding_wide) <- first_column
+
+#### Draw the heatmap ####
+# Define column labels
+column_labels = seq(from = -15, to = 14.9, by = 0.1)
+
+new_column_labels = column_labels
+for(i in 1:length(column_labels)){
+  
+  cur_val = column_labels[i]
+  new_val = ifelse(mod(cur_val, 4) == 0 && cur_val != -15,
+                   toString(cur_val), '')
+  
+  new_column_labels[i] = new_val
+  
+}
+
+# Define row labels
+row_labels = rev(seq(from = -15, to = 14.9, by = 0.1))
+
+new_row_labels = row_labels
+for(i in 1:length(row_labels)){
+  
+  cur_val = row_labels[i]
+  new_val = ifelse(mod(cur_val, 4) == 0 && cur_val != -15,
+                   toString(cur_val), '')
+  
+  new_row_labels[i] = new_val
+  
+}
+
+p_binding_total_complexes <- Heatmap(
+  data_binding_wide,
+  cluster_columns = F, cluster_rows = F, 
+  col = colorRamp2(
+    breaks = c(0, 20, 40, 60, 80, 100),
+    colors = magma(6)),
+  show_column_names = T, row_names_side = 'left',
+  width=unit(heatmap_width, 'cm'), height = unit(heatmap_height, 'cm'),
+  border = T,
+  row_title = expression(paste(bold('\u0394'),
+                               bold(G['bind,HET AB']), 
+                               bold(' (kcal/mol)'), sep = '')),
+  column_title = expression(paste(bold('\u0394'),
+                                  bold(G['bind,HM AA']), 
+                                  bold(' (kcal/mol)'), sep = '')),
+  row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
+  column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
+  column_title_side = 'bottom',
+  row_names_rot = 90, 
+  row_names_centered = T,
+  row_names_gp = gpar(fontsize=row_name_size, fontface = 'bold', align = 'left'),
+  column_names_gp = gpar(fontsize=column_name_size, fontface='bold', align = 'left'),
+  show_heatmap_legend = TRUE,
+  heatmap_legend_param = list(
+    at = c(0, 20, 40, 60, 80, 100),
+    title = 'Total activity',
+    title_gp = gpar(fontsize = legend_title_size),
+    legend_height = unit(legend_height, "cm"),
+    grid_width = unit(legend_width, "cm"),
+    border='black',
+    lwd=1.7,
+    labels_gp = gpar(fontsize = legend_label_size),
+    title_position = "leftcenter-rot"
+  ), 
+  row_labels = new_row_labels,
+  column_labels = new_column_labels, 
+  rect_gp = gpar(col = 'transparent',
+                 lwd = 0
+  ), use_raster = TRUE
+)
+p_binding_total_complexes
+
+#### Add a panel for the fitness with alpha = 80 ####
+
+alpha = 80
+beta = 0.5
+
+data_binding_wide <- data_binding %>% mutate(total_complexes = cAA + cAB + cBB) %>%
+  mutate(total_activity = cAA + cAB + cBB + (0.1*cA) + (0.1*cB)) %>%
+  mutate(logw = round(log2(beta^(log2(total_activity / alpha)^2)), 5)) %>%
+  mutate(logw = ifelse(or(total_complexes > 80, total_activity == 0), NA, logw)) %>%
+  select(new_binding_AB, new_binding_AA, logw) %>%
+  arrange(desc(new_binding_AB)) %>%
+  pivot_wider(names_from = new_binding_AA, values_from = logw)
+
+# Move the first column to the index
+first_column <- data_binding_wide$new_binding_AB
+data_binding_wide <- as.matrix(data_binding_wide[, 2:ncol(data_binding_wide)])
+rownames(data_binding_wide) <- first_column
+
+#### Draw the heatmap ####
+# Define column labels
+column_labels = seq(from = -15, to = 14.9, by = 0.1)
+
+new_column_labels = column_labels
+for(i in 1:length(column_labels)){
+  
+  cur_val = column_labels[i]
+  new_val = ifelse(mod(cur_val, 4) == 0 && cur_val != -15,
+                   toString(cur_val), '')
+  
+  new_column_labels[i] = new_val
+  
+}
+
+# Define row labels
+row_labels = rev(seq(from = -15, to = 14.9, by = 0.1))
+
+new_row_labels = row_labels
+for(i in 1:length(row_labels)){
+  
+  cur_val = row_labels[i]
+  new_val = ifelse(mod(cur_val, 4) == 0 && cur_val != -15,
+                   toString(cur_val), '')
+  
+  new_row_labels[i] = new_val
+  
+}
+
+p_binding_logw <- Heatmap(
+  data_binding_wide,
+  cluster_columns = F, cluster_rows = F, 
+  col = colorRamp2(
+    breaks = c(-1, -0.75, -0.5, -0.25, 0),
+    colors = cividis(5)
+  ),
+  show_column_names = T, row_names_side = 'left',
+  width=unit(heatmap_width, 'cm'), height = unit(heatmap_height, 'cm'),
+  border = T,
+  row_title = expression(paste(bold('\u0394'),
+                               bold(G['bind,HET AB']), 
+                               bold(' (kcal/mol)'), sep = '')),
+  column_title = expression(paste(bold('\u0394'),
+                                  bold(G['bind,HM AA']), 
+                                  bold(' (kcal/mol)'), sep = '')),
+  row_title_gp = gpar(fontsize=row_title_size, fontface = 'bold'),
+  column_title_gp = gpar(fontsize=column_title_size, fontface = 'bold'),
+  column_title_side = 'bottom',
+  row_names_rot = 90, 
+  row_names_centered = T,
+  row_names_gp = gpar(fontsize=row_name_size, fontface = 'bold', align = 'left'),
+  column_names_gp = gpar(fontsize=column_name_size, fontface='bold', align = 'left'),
+  show_heatmap_legend = TRUE,
+  heatmap_legend_param = list(
+    title = 'log2(Fitness)',
+    title_gp = gpar(fontsize = legend_title_size),
+    legend_height = unit(legend_height, "cm"),
+    grid_width = unit(legend_width, "cm"),
+    border='black',
+    lwd=1.7,
+    labels_gp = gpar(fontsize = legend_label_size),
+    title_position = "leftcenter-rot"
+  ), 
+  row_labels = new_row_labels,
+  column_labels = new_column_labels,
+  rect_gp = gpar(col = 'transparent',
+                 lwd = 0
+  ), use_raster = TRUE
+)
+p_binding_logw
+
+p_heatmaps_full_range <- plot_grid(draw_CHeatmap(p_binding_HET), draw_CHeatmap(p_binding_HM_BB),
+                                   draw_CHeatmap(p_binding_total_complexes), draw_CHeatmap(p_binding_logw), 
+                                   ncol = 2, nrow = 2, labels = c('A', 'B', 'C', 'D'), label_size = panel_label_size, 
+                                   label_fontface = 'bold'
+)
+
+ggsave(p_heatmaps_full_range, device = cairo_pdf, width = 12, height = 9, units = 'cm', dpi = 300, 
+       filename = 'Figures/Supplementary_figures/FigS02.solution_space_allBindingEnergies_complete.pdf')
+
 
 #### Figure 2: Parametric simulations ####
 
@@ -1046,9 +1405,8 @@ all_results_parametric_outcome_sd <- left_join(x = all_results_parametric_sd,
                                                by = c('Replicate' = 'Replicate', 'intHM_param' = 'intHM_param', 'sdHM' = 'sdHM'))
 
 
-#### Figure S2 ####
-## Trajectories for Fig. S2 ##
-p_figS2 <- all_results_parametric_outcome_sd %>%
+#### Figure S4 ####
+p_figS4 <- all_results_parametric_outcome_sd %>%
   mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'Both HM and HET', 'HM dominant', 'Monomers', 'Ambiguous'))) %>%
   ggplot(aes(x = fixed_mut, y = pct_HET, group = Replicate, colour = Outcome)) +
   geom_line() +
@@ -1061,11 +1419,11 @@ p_figS2 <- all_results_parametric_outcome_sd %>%
         axis.text.y = element_text(size = 8), 
         strip.text = element_text(size = 10)) +
   labs(colour = '')
-p_figS2
-ggsave(p_figS2, device = cairo_pdf, width = 20, height = 20, units = 'cm', dpi = 300,
-       filename = 'Figures/Supplementary_figures/FigS02.pdf')
+p_figS4
+ggsave(p_figS4, device = cairo_pdf, width = 20, height = 20, units = 'cm', dpi = 300,
+       filename = 'Figures/Supplementary_figures/FigS04.pdf')
 
-## Heatmap for figure 2E ##
+## Heatmap for figure 2B ##
 median_outcome_parametric_sd <- all_results_parametric_final_points_sd %>% ungroup() %>%
   group_by(intHM_param, intHET_param, sdHM, sdHET) %>%
   summarise(median_HET = median(pct_HET), 
@@ -1076,7 +1434,7 @@ median_outcome_parametric_sd <- all_results_parametric_final_points_sd %>% ungro
             mean_mono = mean(pct_mono)
   )
 write.table(median_outcome_parametric_sd, append = F, quote = F, sep = '\t', row.names = F, col.names = T,
-            file = 'Figures/Main_figures/data_fig_2E.tsv'
+            file = 'Figures/Main_figures/data_fig_2B.tsv'
 )
 
 ## Convert to a matrix
@@ -1103,18 +1461,15 @@ legend_height = 3
 ht_opt$TITLE_PADDING = unit(c(0.5, 0.5), "points")
 legend_width = 0.15
 
-p_fig2E <- Heatmap(matrix_median_outcome_param_df,
+p_fig2B <- Heatmap(matrix_median_outcome_param_df,
                    cluster_columns = F, cluster_rows = F, 
                    col = colorRamp2(
                      breaks = c(0, 20, 40, 60, 80, 100),
-                     # colors = magma(6)
                      colors = viridis(6)
                    ),
                    show_column_names = T, row_names_side = 'left',
                    width=unit(heatmap_width_tmp, 'cm'), height = unit(heatmap_height_tmp, 'cm'),
                    border = T,
-                   # column_title = "Mean ddG on the HM (kcal / mol)",
-                   # row_title = "Std. dev. ddG on the HM (kcal / mol)", 
                    column_title = expression(paste(bold('Mean \u0394\u0394'), 
                                                    bold(G['bind,HM']), ' ',
                                                    bold('(kcal/mol)'), sep = '')
@@ -1157,11 +1512,8 @@ p_fig2E <- Heatmap(matrix_median_outcome_param_df,
                                       lwd = 0
                    ), use_raster = TRUE
 )
-p_fig2E
+p_fig2B
 
-#### Figure 2B-D ####
-
-## Try showing some distributions of mutational effects and their correlations ##
 ## Load the mutational effects
 mut_effects <- read_delim('Data/all_mut_matrices.tsv', '\t')
 
@@ -1383,8 +1735,8 @@ all_data_summary_final_points <- all_data_summary %>%
 all_data_summary %<>% 
   mutate(Complex = factor(toupper(Complex), levels = toupper(all_data_summary_final_points$Complex)))
 
-#### Figure S6: Different sets of starting conditions ####
-p_figS6 <- all_data_summary %>%
+#### Figure S8: Different sets of starting conditions ####
+p_figS8 <- all_data_summary %>%
   mutate(Conditions = str_c('Start dG_stab = ', Start_stab, ', Start dG aff = ', Start_aff, sep = '')) %>%
   ggplot(aes(x = fixed_mut, y = med_pct_HET, colour = Conditions)) +
   xlab('Fixed mutations') + ylab('HET percentage (%)') +
@@ -1401,9 +1753,9 @@ p_figS6 <- all_data_summary %>%
   facet_wrap(~Complex, nrow = 8) +
   guides(colour = guide_legend(nrow = 2, byrow = T)) +
   geom_hline(yintercept = 50, linewidth = 1, linetype = 'dashed')
-p_figS6
-ggsave(p_figS6, device = cairo_pdf, width = 45, height = 28, dpi = 500,
-       filename = 'Figures/Supplementary_figures/FigS06.pdf')
+p_figS8
+ggsave(p_figS8, device = cairo_pdf, width = 45, height = 28, dpi = 500,
+       filename = 'Figures/Supplementary_figures/FigS08.pdf')
 
 ### Present results as stacked barplots
 ## Arrange and relevel
@@ -1417,7 +1769,7 @@ all_data_summary_final_points_long <- all_data_summary_final_points %>% ungroup(
                names_to = 'assembly', values_to = 'mean_value')
 
 # Stacked barplot of outcomes per structure
-p_fig2F <- all_data_summary_final_points_long %>% ungroup() %>%
+p_fig2C <- all_data_summary_final_points_long %>% ungroup() %>%
   mutate(assembly_label = ifelse(assembly == 'mean_pct_HET', 'HET', 
                                  ifelse(assembly == 'mean_pct_HMs', 'HMs (AA+BB)',
                                         'Monomers (A+B)')), 
@@ -1442,7 +1794,7 @@ p_fig2F <- all_data_summary_final_points_long %>% ungroup() %>%
   guides(fill = guide_legend(override.aes = list(size = 0.25))) +
   scale_y_continuous(expand = expansion(mult = c(0, 0))) +
   scale_fill_manual(values = c('#4575B4', 'grey', '#FC8D59' ))
-p_fig2F
+p_fig2C
 
 #### Put all parts of the new figure 2 together ####
 
@@ -1452,35 +1804,40 @@ p_fig2A <- ggdraw() + draw_image(
 )
 p_fig2A
 
-legend_hexbins = get_legend(p_bindingHM_folding + theme(legend.justification = 0.35, 
-                                                        legend.key.height = unit(0.15, 'cm')
-                                                        )
-                            )
 
-p_fig2BE_nolegend <- plot_grid(p_binding_corr + theme(aspect.ratio = 1, legend.position = 'none'),
-                      p_bindingHM_folding + theme(aspect.ratio = 1, legend.position = 'none'),
-                      p_bindingHET_folding + theme(aspect.ratio = 1, legend.position = 'none'),
-                      draw_CHeatmap(p_fig2E),
-                      labels = c('B', 'C', 'D', 'E'), label_size = panel_label_size, ncol = 4,
-                      label_fontface = 'bold', rel_widths = c(0.8, 0.8, 0.8, 1))
+p_fig2_top <- plot_grid(p_fig2A, draw_CHeatmap(p_fig2B), 
+                        labels = c('A', 'B'), label_size = panel_label_size, ncol = 2,
+                        label_fontface = 'bold', rel_widths = c(1, 0.8))
 
-p_fig2BE <- plot_grid(legend_hexbins, p_fig2BE_nolegend, nrow = 2,
-                      rel_heights = c(0.15, 1))
+p_fig2 <- plot_grid(p_fig2_top, p_fig2C, 
+                    labels = c('', 'C'), label_size = panel_label_size, nrow = 2,
+                    label_fontface = 'bold')
 
-
-
-p_fig2BF <- plot_grid(p_fig2BE, p_fig2F, labels = c('', 'F'), label_size = panel_label_size,
-                      label_fontface = 'bold',
-                      nrow = 2, rel_heights = c(1, 1))
-
-p_fig2 <- plot_grid(p_fig2A, p_fig2BF, labels = c('A', ''), label_size = panel_label_size, 
-                    label_fontface = 'bold', ncol = 2, rel_widths = c(0.25, 1))
-
-ggsave(p_fig2, device = cairo_pdf, width = 38, height = 16, dpi = 300, units = 'cm',
+ggsave(p_fig2, device = cairo_pdf, width = 28, height = 20, dpi = 300, units = 'cm',
        filename = 'Figures/Main_figures/2.Fig2.pdf')
 ## Cartoons were added manually
 
-#### Use the data from the previous figure to classify structures by their outcome ####
+#### Figure S3 ####
+
+
+p_figS3_nolegend <- plot_grid(p_binding_corr + theme(aspect.ratio = 1, legend.position = 'none'),
+                              p_bindingHM_folding + theme(aspect.ratio = 1, legend.position = 'none'),
+                              p_bindingHET_folding + theme(aspect.ratio = 1, legend.position = 'none'),
+                              labels = c('A', 'B', 'C'), label_size = panel_label_size, ncol = 3,
+                              label_fontface = 'bold')
+
+legend_hexbins = get_legend(p_bindingHM_folding + theme(legend.justification = 0.5, 
+                                                        legend.key.height = unit(0.15, 'cm')
+)
+)
+
+p_figS3<- plot_grid(legend_hexbins, p_figS3_nolegend, nrow = 2,
+                    rel_heights = c(0.15, 1))
+
+ggsave(p_figS3, device = cairo_pdf, width = 20, height = 8, dpi = 300, units = 'cm',
+       filename = 'Figures/Supplementary_figures/FigS03_corr_mut_effects.pdf')
+
+#### Figure S5: Use the data from the previous figure to classify structures by their outcome ####
 all_data_summary_final_points %<>% ungroup() %>%
   mutate(Outcome = case_when(
     mean_pct_HET >= 70 ~ 'HET dominant', 
@@ -1550,9 +1907,9 @@ p_all_trajectories <- all_results_outcomes %>%
   guides(colour = guide_legend(override.aes = list(size = c(3, 3, 3, 3, 3))))
 p_all_trajectories
 ggsave(p_all_trajectories, device = cairo_pdf, width = 45, height = 28, dpi = 500, 
-       filename = 'Figures/Supplementary_figures/FigS03.pdf')
+       filename = 'Figures/Supplementary_figures/FigS05.pdf')
 
-## Figure S05: No clear association of structural parameters with the outcome ## 
+## Figure S7: No clear association of structural parameters with the outcome ## 
 
 # Load data about interfaces
 interface_table = read_delim('Data/Structures/interface_summary.tsv', delim = '\t')
@@ -1579,7 +1936,7 @@ data_final_points_outcome <- left_join(x = all_data_summary_final_points_outcome
                                        by = c('Complex' = 'Structure'))
 
 # Let's see the distribution of interface sizes in each category
-p_figS5A <- data_final_points_outcome %>% 
+p_figS7A <- data_final_points_outcome %>% 
   ## To remove ambiguous
   filter(Outcome != 'Ambiguous') %>%
   mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'Both HM and HET', 'HM dominant'))) %>%
@@ -1600,7 +1957,7 @@ p_figS5A <- data_final_points_outcome %>%
         panel.grid.major = element_blank()) +
   xlab('Outcome') + ylab('Fraction of interface core residues') +
   ylim(0, 0.6)
-p_figS5A
+p_figS7A
 
 #### Check if structures with different outcomes have different distributions of stickiness ####
 
@@ -1616,7 +1973,7 @@ data_final_points_outcome_stickiness <- inner_join(x = all_data_summary_final_po
                                                    by = c('Complex' = 'PDB'))
 
 
-p_figS5B <- data_final_points_outcome_stickiness %>% 
+p_figS7B <- data_final_points_outcome_stickiness %>% 
   ## To remove ambiguous
   filter(Outcome != 'Ambiguous') %>%
   mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'Both HM and HET', 'HM dominant'))) %>%
@@ -1639,7 +1996,7 @@ p_figS5B <- data_final_points_outcome_stickiness %>%
   geom_hline(yintercept = 0, linetype = 'dashed') +
   xlab('Outcome') + ylab('Stickiness') +
   ylim(-0.8, 1.3)
-p_figS5B
+p_figS7B
 
 #### Add a panel for the average distance to self in each structure ####
 
@@ -1676,7 +2033,7 @@ distance_means_final <- inner_join(x = distance_means,
                                    by = c('PDB' = 'Complex'))
 
 ## Try the proportion of residues in self contact
-p_figS5C <- distance_means_final %>%
+p_figS7C <- distance_means_final %>%
   mutate(Region = case_when(
     Region == 0.75 ~ 'Rim', 
     Region == 1 ~ 'Core'
@@ -1702,7 +2059,7 @@ p_figS5C <- distance_means_final %>%
   scale_colour_manual(values = c('#4575B4', '#008000', '#FC8D59', '#b300b3')) +
   xlab('Outcome') + ylab('Proportion of self-contacting residues') +
   ylim(0, 0.6)
-p_figS5C
+p_figS7C
 
 #### New panel on secondary structure content ####
 ## Load the DSSP data
@@ -1720,7 +2077,7 @@ dssp_data_final <- inner_join(x = dssp_data_long %>%
                               y = all_data_summary_outcome %>% select(Complex, Outcome), 
                               by = c('Structure' = 'Complex'))
 
-p_figS5D <- dssp_data_final %>%
+p_figS7D <- dssp_data_final %>%
   mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'Both HM and HET', 'HM dominant')), 
          sec_struc = case_when(
            sec_struc == 'prop_beta' ~ 'Beta strands',
@@ -1745,7 +2102,7 @@ p_figS5D <- dssp_data_final %>%
   xlab('Outcome') + ylab('Secondary structure fraction') +
   # ylim(0, 125)
   ylim(0, 1.25)
-p_figS5D
+p_figS7D
 
 ## Read the ECOD annotations
 ## Keep in mind that ECOD data are organized by hierarchical classifications (top to bottom):
@@ -1769,7 +2126,7 @@ all_data_summary_ecod_medians <- all_data_summary_ecod %>% filter(chain == 'A') 
   arrange(desc(median_HET_pct))
 
 ## Check how the HET_pct varies for different ECOD groups
-p_figS5E <- all_data_summary_ecod %>% 
+p_figS7E <- all_data_summary_ecod %>% 
   filter(chain == 'A') %>%
   mutate(arch_name = factor(arch_name, levels = all_data_summary_ecod_medians$arch_name)) %>% rowwise() %>%
   mutate(arch_type = ifelse(str_detect(pattern = 'alpha', string = arch_name), 'Alpha', 
@@ -1792,18 +2149,17 @@ p_figS5E <- all_data_summary_ecod %>%
         ) +
   ylab('ECOD architecture') + xlab('HET percentage (%)') +
   labs(fill = '', colour = '')
-p_figS5E
-
-p_figS5_top <- plot_grid(p_figS5A, p_figS5B, p_figS5C, p_figS5D, 
+p_figS7E
+p_figS7_top <- plot_grid(p_figS7A, p_figS7B, p_figS7C, p_figS7D, 
                          nrow = 2, labels = c('A', 'B', 'C', 'D'), 
                          label_fontface = 'bold', label_size = panel_label_size)
 
-p_figS5 <- plot_grid(p_figS5_top, p_figS5E, nrow = 2, labels = c('', 'E'), 
+p_figS7 <- plot_grid(p_figS7_top, p_figS7E, nrow = 2, labels = c('', 'E'), 
                      label_fontface = 'bold', label_size = panel_label_size, 
                      rel_heights = c(2, 1))
 
-ggsave(p_figS5, device = cairo_pdf, width = 24, height = 24, units = 'cm', dpi = 300, 
-       filename = 'Figures/Supplementary_figures/FigS05.structural_properties.pdf')
+ggsave(p_figS7, device = cairo_pdf, width = 24, height = 24, units = 'cm', dpi = 300, 
+       filename = 'Figures/Supplementary_figures/FigS07.structural_properties.pdf')
 
 #### Save the data for the structures (supplementary table 1) ####
 ## Need to put together the data for the different items
@@ -1850,7 +2206,7 @@ write.table(table_S1, append = F, quote = F, sep = '\t',
             file = 'table_S1.tsv')
 
 
-#### Figure S04: Similar to Figure 3A but with alpha = 60, correlation with alpha =80 ####
+#### Figure S06: Similar to Figure 3A but with alpha = 60, correlation with alpha =80 ####
 
 ## New data with pdup = 1, regular simulations
 all_results_60opt <- read_delim('Results_simulations/Results_pdup1/Simulations_with_structures/008_simulations_60opt/all_results_all_sims.tsv', delim = '\t')
@@ -1885,8 +2241,7 @@ all_data_summary_60opt <- all_results_60opt %>%
          pct_HMs = round((cAA + cBB) * 100 / Total_complexes, 2), 
          pct_mono = round((cA + cB) * 100 / Total_complexes, 2)) %>%
   group_by(Start_stab, Start_aff, Complex, fixed_mut) %>%
-  summarise(# mean_HET_HM = mean(HET.HM.ratio),
-    # aAA = mean(aAA), aAB = mean(aAB),
+  summarise(
     med_pct_HET = median(pct_HET), 
     mean_pct_HET = mean(pct_HET), 
     sem_pct_HET = sd(pct_HET) / sqrt(n()), 
@@ -1917,7 +2272,7 @@ all_data_summary_final_points_long_60opt <- all_data_summary_final_points_60opt 
                names_to = 'assembly', values_to = 'mean_value')
 
 # Stacked barplot of outcomes per structure
-p_figS4A <- all_data_summary_final_points_long_60opt %>% ungroup() %>%
+p_figS6A <- all_data_summary_final_points_long_60opt %>% ungroup() %>%
   mutate(assembly_label = ifelse(assembly == 'mean_pct_HET', 'HET', 
                                  ifelse(assembly == 'mean_pct_HMs', 'HMs (AA+BB)',
                                         'Monomers (A+B)')), 
@@ -1937,9 +2292,9 @@ p_figS4A <- all_data_summary_final_points_long_60opt %>% ungroup() %>%
         legend.justification = 'center') +
   scale_y_continuous(expand = expansion(mult = c(0, 0))) +
   scale_fill_manual(values = c('#4575B4', 'grey', '#FC8D59' ))
-p_figS4A
+p_figS6A
 
-#### Figure S4B: The correlation between the results with alpha 60 and alpha 80 ####
+#### Figure S5B: The correlation between the results with alpha 60 and alpha 80 ####
 
 corr_check_diff_opt <- inner_join(x = all_data_summary_final_points_60opt %>% ungroup() %>%
                                     mutate(Complex = toupper(Complex)) %>%
@@ -1949,7 +2304,7 @@ corr_check_diff_opt <- inner_join(x = all_data_summary_final_points_60opt %>% un
                                   by = c('Complex' = 'Complex')
 )
 
-p_figS4B <- corr_check_diff_opt %>%
+p_figS6B <- corr_check_diff_opt %>%
   ggplot(aes(x = mean_pct_HET.x, y = mean_pct_HET.y)) +
   geom_point() +
   xlab('HET percentage (pdup = 1, alpha = 60)') +
@@ -1965,9 +2320,9 @@ p_figS4B <- corr_check_diff_opt %>%
   stat_cor(method = 'pearson', p.accuracy = 0.001, r.accuracy = 0.01, cor.coef.name = 'r', size = 3,
            label.y.npc = 0.8, label.x.npc = 0.05) +
   geom_smooth(method = 'lm', alpha = 0.5)
-p_figS4B
+p_figS6B
 
-#### Figure S4C: Decrease in folding energy in simulations with alpha = 60 ####
+#### Figure S6C: Decrease in folding energy in simulations with alpha = 60 ####
 
 all_results_stab_long_60opt <- all_results_60opt %>% ungroup() %>%
   filter(Start_stab == -5, Start_aff == -10) %>% rowwise() %>%
@@ -1982,7 +2337,7 @@ all_results_stab_long_60opt <- all_results_60opt %>% ungroup() %>%
   ))
 
 ## Draw the figure
-p_figS4C <- all_results_stab_long_60opt %>% 
+p_figS6C <- all_results_stab_long_60opt %>% 
   filter(Complex == '1gpr') %>%
   ggplot(aes(x = fixed_mut, y = curr_stab, colour = chain)) +
   geom_point(alpha = 0.1) +
@@ -2009,9 +2364,9 @@ p_figS4C <- all_results_stab_long_60opt %>%
   )
   )
   )
-p_figS4C
+p_figS6C
 
-#### Figure S4D: No decrease in folding energy in simulations with alpha = 80 ####
+#### Figure S6D: No decrease in folding energy in simulations with alpha = 80 ####
 
 ## Distinguish the least stable of the two chains from the more stable
 all_results_stab_long <- all_results %>% ungroup() %>%
@@ -2027,7 +2382,7 @@ all_results_stab_long <- all_results %>% ungroup() %>%
   ))
 
 ## Draw the figure
-p_figS4D <- all_results_stab_long %>% 
+p_figS6D <- all_results_stab_long %>% 
   filter(Complex == '1gpr') %>%
   ggplot(aes(x = fixed_mut, y = curr_stab, colour = chain)) +
   geom_point(alpha = 0.1) +
@@ -2054,9 +2409,9 @@ p_figS4D <- all_results_stab_long %>%
   )
   )
 
-p_figS4D
+p_figS6D
 
-#### Figure S4E: Transient decrease in HET percentage in the simulations with alpha = 60 ####
+#### Figure S6E: Transient decrease in HET percentage in the simulations with alpha = 60 ####
 
 ## Get the list of fixed mutational effects for each structure
 all_results_fixed_effects_60opt <- all_results_60opt %>% ungroup() %>%
@@ -2130,7 +2485,7 @@ for(i in 1:length(values_check)){
 }
 
 ## Draw boxplots of the distributions of percentages of HET
-p_figS4E <- all_het_pct_60opt %>% 
+p_figS6E <- all_het_pct_60opt %>% 
   ggplot(aes(x = as.factor(mut_num), y = pct_HET)) +
   geom_jitter(width = 0.2, alpha = 0.5) +
   geom_boxplot(alpha = 0.3, outlier.shape = NA) +
@@ -2140,10 +2495,10 @@ p_figS4E <- all_het_pct_60opt %>%
   xlab('Fixed mutations') + ylab('HET percentage (%)') +
   geom_hline(yintercept = 50, linetype = 'dashed') +
   ggtitle('HET percentage in simulations with alpha = 60')
-p_figS4E
+p_figS6E
 
 
-#### Figure S4F: No transient decrease in HET percentage in simulations with alpha = 80 ####
+#### Figure S6F: No transient decrease in HET percentage in simulations with alpha = 80 ####
 
 ## Get the list of fixed mutational effects for each structure
 all_results_fixed_effects <- all_results %>% ungroup() %>%
@@ -2217,7 +2572,7 @@ for(i in 1:length(values_check)){
 }
 
 ## Draw boxplots of the distributions of percentages of HET
-p_figS4F <- all_het_pct %>% 
+p_figS6F <- all_het_pct %>% 
   ggplot(aes(x = as.factor(mut_num), y = pct_HET)) +
   geom_jitter(width = 0.2, alpha = 0.5) +
   geom_boxplot(alpha = 0.3, outlier.shape = NA) +
@@ -2227,20 +2582,20 @@ p_figS4F <- all_het_pct %>%
   xlab('Fixed mutations') + ylab('HET percentage (%)') +
   geom_hline(yintercept = 50, linetype = 'dashed') +
   ggtitle('HET percentage in simulations with alpha = 80')
-p_figS4F
+p_figS6F
 
-## Draw figure S4 ##
+## Draw figure S5 ##
 
-p_figS4_top <- plot_grid(p_figS4A, p_figS4B, rel_widths = c(3, 1.2), ncol = 2, 
+p_figS6_top <- plot_grid(p_figS6A, p_figS6B, rel_widths = c(3, 1.2), ncol = 2, 
                          labels = c('A', 'B'), label_fontface = 'bold', label_size = panel_label_size)
 
-p_figS4_rest <- plot_grid(p_figS4C, p_figS4D, p_figS4E, p_figS4F, 
+p_figS6_rest <- plot_grid(p_figS6C, p_figS6D, p_figS6E, p_figS6F, 
                           nrow = 2, labels = c('C', 'D', 'E', 'F'), label_fontface = 'bold',
                           label_size = panel_label_size)
-p_figS4 <- plot_grid(p_figS4_top, p_figS4_rest, nrow = 2, rel_heights = c(1, 2))
+p_figS6 <- plot_grid(p_figS6_top, p_figS6_rest, nrow = 2, rel_heights = c(1, 2))
 
-ggsave(p_figS4, device = cairo_pdf, width = 38, height = 24, units = 'cm', dpi = 300, 
-       filename = 'Figures/Supplementary_figures/FigS04_new.pdf')
+ggsave(p_figS6, device = cairo_pdf, width = 38, height = 24, units = 'cm', dpi = 300, 
+       filename = 'Figures/Supplementary_figures/FigS06_new.pdf')
 
 #### Figure 3 ####
 
@@ -2662,7 +3017,249 @@ ggsave(p_fig3, device = cairo_pdf, width = 24, height = 24, units = 'cm', dpi = 
        filename = 'Figures/Main_figures/3.Fig3_available_fixed_effects.pdf')
 ## Labels of fixed and available mutations were added manually
 
-#### Repeat the above figure with the concentration of HET at the time (Figure S07) ####
+#### Figure S10: Like figure 3 but only with the very high quality structures ####
+
+# Load QSbio data
+qsbio <- read_delim(file = 'Data/QSbio/QSbio.csv',
+                    delim = '\t', locale = locale(decimal_mark = ','))
+
+qsbio_hm <- qsbio %>%
+  filter(pdb_nsub == 2) %>% 
+  mutate(code_sub = toupper(code_sub))
+
+all_data_summary_final_points_outcome_qsbio <- left_join(x = all_data_summary_final_points_outcome,
+                                                         y = qsbio_hm %>% 
+                                                           separate(code, into = c('code_sub_new', 'bio_assembly_num'), sep = '_') %>%
+                                                           filter(bio_assembly_num == 1) %>%
+                                                           select(code_sub, error_estimated, QSbio.confidence), 
+                                                         by = c("Complex" = "code_sub"))
+all_data_summary_final_points_long_qsbio <- all_data_summary_final_points_outcome_qsbio %>% ungroup() %>%
+  pivot_longer(cols = c(mean_pct_HET, mean_pct_HMs, mean_pct_mono), 
+               names_to = 'assembly', values_to = 'mean_value')
+
+## Fig. S10A: Like fig. 2F but only with the very high quality structures
+p_figS10A <- all_data_summary_final_points_long_qsbio %>% ungroup() %>%
+  filter(QSbio.confidence == 'Very high') %>%
+  mutate(assembly_label = ifelse(assembly == 'mean_pct_HET', 'HET', 
+                                 ifelse(assembly == 'mean_pct_HMs', 'HMs (AA+BB)',
+                                        'Monomers (A+B)')), 
+         Complex = toupper(Complex)) %>%
+  mutate(assembly_label = factor(assembly_label, levels = c('HET', 'Monomers (A+B)', 'HMs (AA+BB)')),
+         Complex = factor(Complex, levels = toupper(all_data_summary_final_points$Complex))
+  ) %>%
+  ggplot(aes(x = Complex, y = mean_value, fill = assembly_label)) +
+  geom_bar(stat = 'identity') +
+  xlab('PDB ID') + ylab('Percentage (%)') +
+  labs(fill = '') +
+  geom_hline(yintercept = 50, linetype = 'dashed') +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, size = 9),
+        axis.title = element_text(size = 12),
+        axis.text.y = element_text(size = 9),
+        legend.text = element_text(size = 10),
+        legend.title = element_text(size = 12),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        legend.position = 'top', 
+        legend.justification = 'center') +
+  guides(fill = guide_legend(override.aes = list(size = 0.25))) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0))) +
+  scale_fill_manual(values = c('#4575B4', 'grey', '#FC8D59' ))
+p_figS10A
+
+## Fig. S10 ##
+mut_effects_new <- left_join(x = mut_effects %>%
+                               mutate(Complex = toupper(Complex)), 
+                             ## When filtering for only QSBio very high confidence structures
+                             y = all_data_summary_final_points_outcome_qsbio %>% ungroup() %>%
+                               filter(QSbio.confidence == 'Very high') %>%
+                               mutate(mean_HET_HM = mean_pct_HET + mean_pct_HMs) %>%
+                               mutate(Outcome = case_when(
+                                 mean_pct_HET >= 70 ~ 'HET dominant', 
+                                 mean_pct_HMs >= 70 ~ 'HM dominant', 
+                                 mean_HET_HM >= 70 ~ 'Both HM and HET',
+                                 mean_pct_mono >= 70 ~ 'Monomer',
+                                 TRUE ~ 'Ambiguous')
+                               ) %>%
+                               select(Complex, Outcome, QSbio.confidence),
+                             by = c('Complex' = 'Complex'))
+
+## Add another boolean variable to distinguish alpha
+mut_effects_new %<>% mutate(alpha_check = case_when(
+  Complex %in% c('2B18', '3ULH') ~ TRUE,
+  TRUE ~ FALSE
+))
+
+mut_effects_new %<>% mutate(linear_residuals = Mean_ddG_int_HET - (0.5 * Mean_ddG_int_HM)) %>% 
+  filter(Mean_ddG_int_HET != 0, Mean_ddG_int_HM != 0) %>%
+  mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'Both HM and HET', 'HM dominant'))) %>%
+  filter(QSbio.confidence == 'Very high')
+
+p_figS10B <- mut_effects_new %>% ggplot(aes(x = linear_residuals, group = Complex, colour = Outcome,
+                                           alpha = alpha_check, linewidth = alpha_check)) +
+  geom_vline(xintercept = 0.05, linetype = 'dashed') +
+  geom_vline(xintercept = -0.05, linetype = 'dashed') +
+  annotate(geom = 'rect', xmin = 0.05, xmax = Inf, ymin = -Inf, ymax = Inf,
+           fill = 'grey', alpha = 0.3, colour = NA) +
+  annotate(geom = 'rect', xmin = -Inf, xmax = -0.05, ymin = -Inf, ymax = Inf,
+           fill = 'grey', alpha = 0.3) +
+  stat_ecdf() +
+  stat_ecdf(data = mut_effects_new %>% filter(alpha_check == T)) +
+  scale_linewidth_manual(values = c(0.5, 0.75)) +
+  scale_colour_manual(values = c('#4575B4', '#008000', '#FC8D59')) +
+  scale_alpha_manual(values = c(0.2, 1)) +
+  xlim(-0.3, 0.3) +
+  annotate(geom = 'text', x = -0.20, y = 0.5, label =  'Favoring HET\n(negative residual)', size = 3.5) +
+  annotate(geom = 'text', x = 0.20, y = 0.5, label = 'Favoring HM\n(positive residual)', size = 3.5) +
+  geom_vline(xintercept = 0, linetype = 'dashed') +
+  theme(legend.position = 'none',
+        legend.justification = 'center', 
+        panel.grid.major = element_blank(), 
+        plot.title = element_text(hjust = 0.5, size = 14), 
+        axis.title = element_text(size = axis_title_size_fig3)) +
+  xlab('Residuals') + ylab('Cumulative density') +
+  guides(alpha = 'none', linewidth = 'none', fill = 'none')
+p_figS10B
+
+## Fig. S10C ##
+## Add the outcomes for each structure
+all_results_fixed_effects_outcome <- left_join(x = all_results_fixed_effects %>% ungroup() %>%
+                                                 filter(Start_stab == -5, Start_aff == -10) %>%
+                                                 mutate(netEffect_HETbind = mut_eff_binding_energy_AB, 
+                                                        # Mutations can only affect one of the two HMs at a time, so the registered change
+                                                        # has to be zero for one of them
+                                                        netEffect_HMbind = mut_eff_binding_energy_AA + mut_eff_binding_energy_BB, 
+                                                        Complex = toupper(Complex)
+                                                 ) %>%
+                                                 select(Replicate, Complex,
+                                                        netEffect_HETbind, netEffect_HMbind) %>% 
+                                                 # Calculate residuals
+                                                 mutate(linear_residuals = netEffect_HETbind - (0.5 * netEffect_HMbind)), 
+                                               y = all_data_summary_final_points_outcome_qsbio %>% ungroup() %>%
+                                                 filter(QSbio.confidence == 'Very high') %>%
+                                                 mutate(mean_HET_HM = mean_pct_HET + mean_pct_HMs) %>%
+                                                 mutate(Outcome = case_when(
+                                                   mean_pct_HET >= 70 ~ 'HET dominant', 
+                                                   mean_pct_HMs >= 70 ~ 'HM dominant', 
+                                                   mean_HET_HM >= 70 ~ 'Both HM and HET',
+                                                   mean_pct_mono >= 70 ~ 'Monomer',
+                                                   TRUE ~ 'Ambiguous')
+                                                 ) %>%
+                                                 select(Complex, Outcome, QSbio.confidence),
+                                               by = c('Complex' = 'Complex'))
+
+## Add another boolean variable to distinguish alpha
+all_results_fixed_effects_outcome %<>% mutate(alpha_check = case_when(
+  Complex %in% c('2b18', '3ulh') ~ TRUE,
+  TRUE ~ FALSE
+)) %>%
+  filter(QSbio.confidence == 'Very high')
+
+p_figS10C <- all_results_fixed_effects_outcome %>%
+  filter(netEffect_HETbind != 0, netEffect_HMbind != 0) %>%
+  mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'Both HM and HET', 'HM dominant'))) %>%
+  ggplot(aes(x = linear_residuals, group = Complex, colour = Outcome,)) +
+  geom_vline(xintercept = 0.05, linetype = 'dashed') +
+  annotate(geom = 'rect', xmin = 0.05, xmax = Inf, ymin = -Inf, ymax = Inf,
+           fill = 'grey', alpha = 0.3, colour = NA) +
+  geom_vline(xintercept = -0.05, linetype = 'dashed') +
+  annotate(geom = 'rect', xmin = -Inf, xmax = -0.05, ymin = -Inf, ymax = Inf,
+           fill = 'grey', alpha = 0.3) +
+  stat_ecdf(linewidth = 0.5, alpha = 0.2) +
+  stat_ecdf(data = all_results_fixed_effects_outcome %>%
+              filter(netEffect_HETbind != 0, netEffect_HMbind != 0, 
+                     Complex %in% c('2B18', '3ULH')
+              ) %>%
+              mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'HM dominant'))), 
+            alpha = 1, linewidth = 0.75
+  ) +
+  scale_colour_manual(values = c('#4575B4', '#008000', '#FC8D59')) +
+  xlim(-0.3, 0.3) +
+  ylim(0, 1) +
+  annotate(geom = 'text', x = -0.20, y = 0.5, label =  'Favoring HET\n(negative residual)', size = 3.5) +
+  annotate(geom = 'text', x = 0.20, y = 0.5, label = 'Favoring HM\n(positive residual)', size = 3.5) +
+  geom_vline(xintercept = 0, linetype = 'dashed') +
+  theme(legend.position = 'none',
+        legend.justification = 'center', 
+        panel.grid.major = element_blank(), 
+        plot.title = element_text(hjust = 0.5, size = 14), 
+        axis.title = element_text(size = axis_title_size_fig3)) +
+  xlab('Residuals') + ylab('Cumulative density') +
+  guides(alpha = 'none', linewidth = 'none', fill = 'none')
+p_figS10C
+
+p_legend_figS10BC <- get_legend(p_figS10C + theme(legend.position = 'top'))
+
+p_figS10BC_nolegend <- plot_grid(p_figS10B, p_figS10C, ncol = 2, labels = c('B', 'C'), 
+                                label_size = panel_label_size, label_fontface = 'bold')
+
+p_figS10BC <- plot_grid(p_legend_figS10BC, p_fig10BC_nolegend, nrow = 2, rel_heights = c(0.085, 1))
+p_figS10BC
+
+## Fig. S10D ##
+fractions_mut_effects <- mut_effects_new %>% ungroup() %>%
+  group_by(Complex, Outcome) %>%
+  summarise(fraction_favor_HET = mean(linear_residuals < -0.05), 
+            fraction_favor_HM = mean(linear_residuals > 0.05)) %>%
+  mutate(delta_favor_HET = fraction_favor_HET - fraction_favor_HM)
+
+fractions_mut_effects_final_HET <- left_join(x = fractions_mut_effects %>%
+                                               mutate(Complex = toupper(Complex)), 
+                                             y = all_data_summary_final_points %>% 
+                                               select(Complex, mean_pct_HET), 
+                                             by = c('Complex' = 'Complex'))
+
+p_figS10D <- fractions_mut_effects_final_HET %>%
+  ggplot(aes(x = delta_favor_HET, y = mean_pct_HET)) +
+  geom_point() +
+  xlab('Enrichment of available mutations with HET-favoring residuals') + ylab('Mean HET percentage (%)') +
+  theme(panel.grid.major = element_blank(), 
+        plot.title = element_text(hjust = 0.5), 
+        axis.title = element_text(size = axis_title_size_fig3)) +
+  stat_cor(method = 'spearman', p.accuracy = 0.001, r.accuracy = 0.01, cor.coef.name = 'rho',
+           size = 3.5, label.x.npc = 0.5, label.y.npc = 0.1) +
+  geom_smooth(method = 'lm', alpha = 0.5) +
+  ylim(0, 100)
+p_figS10D
+
+## Fig. S10E ##
+fractions_fixed_mut_effects <- 
+  all_results_fixed_effects_outcome %>%
+  ungroup() %>%
+  group_by(Complex, Outcome) %>%
+  summarise(fraction_favor_HET = mean(linear_residuals < -0.05), 
+            fraction_favor_HM = mean(linear_residuals > 0.05)) %>%
+  mutate(delta_favor_HET = fraction_favor_HET - fraction_favor_HM)
+
+fractions_fixed_mut_effects_final_HET <- left_join(x = fractions_fixed_mut_effects %>%
+                                                     mutate(Complex = toupper(Complex)), 
+                                                   y = all_data_summary_final_points %>% 
+                                                     select(Complex, mean_pct_HET), 
+                                                   by = c('Complex' = 'Complex'))
+
+p_figS10E <- fractions_fixed_mut_effects_final_HET %>%
+  ggplot(aes(x = delta_favor_HET, y = mean_pct_HET)) +
+  geom_point() +
+  xlab('Enrichment of fixed mutations with HET-favoring residuals') + ylab('Mean HET percentage (%)') +
+  theme(panel.grid.major = element_blank(), 
+        plot.title = element_text(hjust = 0.5), 
+        axis.title = element_text(size = axis_title_size_fig3)) +
+  stat_cor(method = 'spearman', p.accuracy = 0.001, r.accuracy = 0.01, cor.coef.name = 'rho',
+           size = 3.5, label.x.npc = 0.5, label.y.npc = 0.1) +
+  geom_smooth(method = 'lm', alpha = 0.5) +
+  ylim(0, 100)
+p_figS10E
+
+## Put all the panels together
+p_figS10DE <- plot_grid(p_figS10D, p_figS10E, ncol = 2, labels = c('D', 'E'), 
+                       label_size = panel_label_size, label_fontface = 'bold')
+
+p_figS10 <-plot_grid(p_figS10A, p_figS10BC, p_figS10DE, nrow = 3, labels = c('A', '', ''), 
+                    label_size = panel_label_size, label_fontface = 'bold')
+
+ggsave(p_figS10, device = cairo_pdf, width = 26, height = 24, units = 'cm', dpi = 300, 
+       filename = 'Figures/Supplementary_figures/FigS10.Available_fixed_effects_QSBio_veryHigh.pdf')
+
+#### Figure S09: Relationship between cumulative residuals and concentration of HET at the time ####
 
 values_check <- c(5, 10, 25, 50, 100, 198)
 all_plots <- list()
@@ -2728,7 +3325,7 @@ p_cumul_res <- plot_grid(all_plots[[1]], all_plots[[2]], all_plots[[3]],
                          all_plots[[4]], all_plots[[5]], all_plots[[6]], 
                          nrow = 2)
 ggsave(p_cumul_res, device = cairo_pdf, width = 20, height = 14, units = 'cm', dpi = 300, 
-       filename = 'Figures/Supplementary_figures/FigS07_residuals_HET_at_the_time.pdf')
+       filename = 'Figures/Supplementary_figures/FigS09_residuals_HET_at_the_time.pdf')
 
 #### Figure 4 ####
 
@@ -2945,7 +3542,6 @@ data_syn_ratio_bind_wide <- data_syn_ratio_bind %>%
 first_column <- data_syn_ratio_bind_wide$binding_diff
 data_syn_ratio_bind_wide <- as.matrix(data_syn_ratio_bind_wide[, 2:ncol(data_syn_ratio_bind_wide)])
 rownames(data_syn_ratio_bind_wide) <- first_column
-
 
 ## Draw heatmaps for effect of synthesis rate
 
@@ -3173,8 +3769,8 @@ all_results_parametric_gene_exp_dup_outcome <- left_join(x = all_results_paramet
                                                          by = c('Replicate' = 'Replicate', 'intHM_param' = 'intHM_param', 
                                                                 'Expression_mut_probs' = 'Expression_mut_probs'))
 
-## Figure S8: Trajectories for parametric simulations allowing changes in synthesis rates ##
-p_figS8 <- all_results_parametric_gene_exp_dup_outcome %>%
+## Figure S11: Trajectories for parametric simulations allowing changes in synthesis rates ##
+p_figS11 <- all_results_parametric_gene_exp_dup_outcome %>%
   mutate(intHM_param = str_c('Mean ddG HM = ', intHM_param, sep = ''), 
          Expression_mut_probs = str_c('p_exp = ', Expression_mut_probs, sep = '')) %>%
   mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'Both HM and HET', 'HM dominant', 'Monomers', 'Ambiguous'))) %>%
@@ -3191,9 +3787,9 @@ p_figS8 <- all_results_parametric_gene_exp_dup_outcome %>%
         legend.text = element_text(size = 20), 
         axis.title = element_text(size = 24), 
         axis.text = element_text(size = 16))
-p_figS8
-ggsave(p_figS8, device = cairo_pdf, width = 35, height = 28, dpi = 500,
-       filename = 'Figures/Supplementary_figures/FigS08.Trajectories_parametric_simulations_new.pdf')
+p_figS11
+ggsave(p_figS11, device = cairo_pdf, width = 35, height = 28, dpi = 500,
+       filename = 'Figures/Supplementary_figures/FigS11.Trajectories_parametric_simulations_new.pdf')
 
 #### Convert the results of the simulations above to a heatmap ####
 #### x-axis can be probability of changes to expression, y axis can be effect on HM ####
@@ -3284,7 +3880,7 @@ all_data_final_points_gene_exp<- all_results_gene_exp %>% ungroup() %>%
   )
   )
 
-#### Figure S9: Check how much the two paralogs diverged in expression ####
+#### Figure S12: Check how much the two paralogs diverged in expression ####
 
 ## Look at how much the synthesis rates of the paralogs diverged
 
@@ -3302,7 +3898,7 @@ summary(test_exp_diff$diff_synthesis)
 test_exp_diff %<>% mutate(log2FC = log2(s_abundant_HM / s_low_HM))
 summary(test_exp_diff$log2FC)
 
-p_figS9 <- gene_exp_synth_rates_param %>% ungroup() %>% 
+p_figS12 <- gene_exp_synth_rates_param %>% ungroup() %>% 
   pivot_longer(cols = c('s_abundant_HM', 's_low_HM'), names_to = 'Checked_paralog', values_to = 'Synthesis_rate') %>%
   mutate(Checked_paralog = case_when(
     Checked_paralog == 's_abundant_HM' ~ 'More abundant subunit',
@@ -3317,9 +3913,9 @@ p_figS9 <- gene_exp_synth_rates_param %>% ungroup() %>%
   xlab('Probability of mutations affecting synthesis rate') + ylab('Synthesis rate') +
   labs(fill = '') +
   ylim(50, 200)
-p_figS9
-ggsave(p_figS9, device = cairo_pdf, width = 18, height = 10, units = 'cm', dpi = 300, 
-       filename = 'Figures/Supplementary_figures/FigS09.Divergence_paralogs.pdf')
+p_figS12
+ggsave(p_figS12, device = cairo_pdf, width = 18, height = 10, units = 'cm', dpi = 300, 
+       filename = 'Figures/Supplementary_figures/FigS12.Divergence_paralogs.pdf')
 
 ## Continue working with the simulations with data on gene expression
 all_data_summary_gene_exp <- all_results_gene_exp %>% 
@@ -3331,7 +3927,6 @@ all_data_summary_gene_exp <- all_results_gene_exp %>%
          pct_mono = round((cA + cB) * 100 / Total_complexes, 2)) %>%
   group_by(Start_stab, Start_aff, Expression_mut_probs, Complex, fixed_mut) %>%
   summarise(
-    # aAA = mean(aAA), aAB = mean(aAB),
     med_pct_HET = median(pct_HET), 
     mean_pct_HET = mean(pct_HET), 
     sem_pct_HET = sd(pct_HET) / sqrt(n()), 
@@ -3448,9 +4043,9 @@ ggsave(p_fig4, device = cairo_pdf, width = 20, height = 20, units = 'cm', dpi = 
        filename = 'Figures/Main_figures/4.Fig4.pdf')
 ## Cartoons for the two types of simulations were added manually
 
-#### Figure S10: Similar to figure 4 but with alpha = 60 ####
+#### Figure S13: Similar to figure 4 but with alpha = 60 ####
 
-## Figure S10A: Fitness when alpha = 60 ##
+## Figure S13A: Fitness when alpha = 60 ##
 
 alpha <-60
 beta <- 0.5
@@ -3496,7 +4091,7 @@ for(i in 1:length(row_labels)){
 }
 
 
-p_figS10A_logw <- Heatmap(
+p_figS13A_logw <- Heatmap(
   data_syn_ratio_bind_wide,
   cluster_columns = F, cluster_rows = F,
   col = colorRamp2(
@@ -3547,9 +4142,9 @@ p_figS10A_logw <- Heatmap(
                  lwd = 0
   ), use_raster = T
 )
-p_figS10A_logw
+p_figS13A_logw
 
-#### Figure S10B: Parametric simulations with alpha = 60 ####
+#### Figure S13B: Parametric simulations with alpha = 60 ####
 
 ## Load data for alpha = 60
 all_results_parametric_gene_exp_dup_60opt <- read_delim('Results_simulations/Results_pdup1/Parametric_simulations/008_simulations_parametric_gene_exp_pdup1_60opt/all_results_all_sims.tsv', delim = '\t')
@@ -3609,7 +4204,7 @@ all_results_parametric_gene_exp_dup_outcome_60opt <- left_join(x = all_results_p
 #### Convert the results of the simulations above to a heatmap ####
 #### x-axis can be probability of changes to expression, y axis can be effect on HM ####
 
-data_fig_S10B <- all_results_parametric_gene_exp_dup_outcome_60opt %>% 
+data_fig_S13B <- all_results_parametric_gene_exp_dup_outcome_60opt %>% 
   filter(fixed_mut == 200) %>% ungroup() %>%
   group_by(Expression_mut_probs, intHM_param) %>%
   summarise(median_HET = median(pct_HET), 
@@ -3625,7 +4220,7 @@ param_gene_exp_final_points_60opt <- as.matrix(param_gene_exp_final_points_60opt
 rownames(param_gene_exp_final_points_60opt) <- needed_rownames
 
 
-p_figS10B <- Heatmap(t(param_gene_exp_final_points_60opt),
+p_figS13B <- Heatmap(t(param_gene_exp_final_points_60opt),
                     cluster_columns = F, cluster_rows = F, 
                     col = colorRamp2(
                       breaks = c(0, 20, 40, 60, 80, 100),
@@ -3661,9 +4256,9 @@ p_figS10B <- Heatmap(t(param_gene_exp_final_points_60opt),
                       title_position = "leftcenter-rot"
                     ), 
 )
-p_figS10B
+p_figS13B
 
-#### Figure S10C: General trajectories for simulations with structures with changes in synth. rates (opt60) ####
+#### Figure S13C: General trajectories for simulations with structures with changes in synth. rates (opt60) ####
 
 ## Load the data for simulations with alpha = 60
 all_results_gene_exp_60opt <- read_delim('Results_simulations/Results_pdup1/Simulations_with_structures/008_simulations_gene_expression_pdup1_60opt/all_results_all_sims.tsv', delim = '\t')
@@ -3740,7 +4335,7 @@ avg_outcome_reps_gene_exp_60opt <- avg_outcome_reps_gene_exp_60opt %>%
   ) %>%
   filter(assembly %in% c('HET', 'High HM', 'Low HM'))
 
-p_figS10C_all_lines <- avg_outcome_reps_gene_exp_60opt %>%
+p_figS13C_all_lines <- avg_outcome_reps_gene_exp_60opt %>%
   ggplot(aes(x = as.factor(Expression_mut_probs), y = mean_value)) +
   geom_hline(yintercept = 50, linetype = 'dashed') +
   geom_line(aes(group = interaction(assembly, Complex), colour = assembly), 
@@ -3755,16 +4350,16 @@ p_figS10C_all_lines <- avg_outcome_reps_gene_exp_60opt %>%
   theme(legend.position = 'top', legend.justification = 'center', 
         panel.grid.major = element_blank()) +
   ylim(0, 100)
-p_figS10C_all_lines
+p_figS13C_all_lines
 
-p_figS10_top <- plot_grid(draw_CHeatmap(p_figS10A_logw), draw_CHeatmap(p_figS10B),
+p_figS13_top <- plot_grid(draw_CHeatmap(p_figS13A_logw), draw_CHeatmap(p_figS13B),
                          labels = c('A', 'B'), label_fontface = 'bold', 
                          label_size = panel_label_size, ncol = 2)
-p_figS10 <- plot_grid(p_figS10_top, p_figS10C_all_lines, labels = c('', 'C'), 
+p_figS13 <- plot_grid(p_figS13_top, p_figS13C_all_lines, labels = c('', 'C'), 
                      label_fontface = 'bold', label_size = panel_label_size, nrow = 2, 
                      rel_heights = c(0.8, 1))
-ggsave(p_figS10, device = cairo_pdf, width = 18, height = 15, units = 'cm',  dpi = 300, 
-       filename = 'Figures/Supplementary_figures/FigS10.Simulations_gene_exp_alpha60.pdf')
+ggsave(p_figS13, device = cairo_pdf, width = 18, height = 15, units = 'cm',  dpi = 300, 
+       filename = 'Figures/Supplementary_figures/FigS13.Simulations_gene_exp_alpha60.pdf')
 ## Cartoons were added manually
 
 #### Figure 5 ####
@@ -4178,9 +4773,9 @@ all_results_parametric_biased_outcome <- left_join(x = all_results_parametric_bi
                                                           'HETbias' = 'HETbias'))
 
 
-#### Figure S11: Individual trajectories ####
+#### Figure S14: Individual trajectories ####
 
-p_figS11 <- all_results_parametric_biased_outcome %>%
+p_figS14 <- all_results_parametric_biased_outcome %>%
   mutate(intHM_param = str_c('Mean ddG HM = ', intHM_param, sep = ''), 
          HETbias = str_c('HETbias = ', HETbias, sep = '')) %>%
   mutate(HETbias = factor(HETbias, 
@@ -4205,9 +4800,9 @@ p_figS11 <- all_results_parametric_biased_outcome %>%
         strip.text = element_text(size = 18)
         ) +
   geom_hline(yintercept = 50, linetype = 'dashed')
-p_figS11
-ggsave(p_figS11, device = cairo_pdf, width = 45, height = 28, dpi = 300,
-       filename = 'Figures/Supplementary_figures/FigS11.Trajectories_parametric_biased_simulations_80opt.pdf')
+p_figS14
+ggsave(p_figS14, device = cairo_pdf, width = 45, height = 28, dpi = 300,
+       filename = 'Figures/Supplementary_figures/FigS14.Trajectories_parametric_biased_simulations_80opt.pdf')
 
 param_biased_final_points <- all_results_parametric_biased_outcome %>% 
   filter(fixed_mut == 200) %>% ungroup() %>%
@@ -4363,9 +4958,9 @@ p_fig5 <-  plot_grid(draw_CHeatmap(p_fig5A), draw_CHeatmap(p_fig5B),
 ggsave(p_fig5, device = cairo_pdf, width = 20, height = 20, units = 'cm', dpi = 300, 
        filename = 'Figures/Main_figures/5.Fig5.pdf')
 
-#### Figure S12: Similar to figure 5 but with alpha = 60 ####
+#### Figure S15: Similar to figure 5 but with alpha = 60 ####
 
-## Figure S12A ##
+## Figure S15A ##
 
 alpha <- 60
 beta <- 0.5
@@ -4413,7 +5008,7 @@ for(i in 1:length(row_labels)){
   
 }
 
-p_figS12A_logw <- Heatmap(
+p_figS15A_logw <- Heatmap(
   data_space_activity_wide,
   cluster_columns = F, cluster_rows = F,
   col = colorRamp2(
@@ -4460,9 +5055,9 @@ p_figS12A_logw <- Heatmap(
                  lwd = 0
   ), use_raster = T
 )
-p_figS12A_logw
+p_figS15A_logw
 
-## Figure S12B: Load parametric simulations with the optimum at 60 ##
+## Figure S15B: Load parametric simulations with the optimum at 60 ##
 
 ## Data from the run with pdup = 1, alpha = 60
 all_results_parametric_biased_opt60 <- read_delim('Results_simulations/Results_pdup1/Parametric_simulations/008_simulations_parametric_hetBias_pdup1_60opt/all_results_all_sims.tsv', delim = '\t')
@@ -4526,7 +5121,7 @@ param_biased_final_points_opt60 <- as.matrix(param_biased_final_points_opt60 %>%
                                                ungroup() %>% select(-HETbias))
 rownames(param_biased_final_points_opt60) <- needed_rownames
 
-p_figS12B <- Heatmap(t(param_biased_final_points_opt60),
+p_figS15B <- Heatmap(t(param_biased_final_points_opt60),
                      cluster_columns = F, cluster_rows = F, 
                      col = colorRamp2(
                        breaks = c(0, 20, 40, 60, 80, 100),
@@ -4561,9 +5156,9 @@ p_figS12B <- Heatmap(t(param_biased_final_points_opt60),
                        title_position = "leftcenter-rot"
                      ), 
 )
-p_figS12B
+p_figS15B
 
-#### Figure S12C-D: Simulations with structures and activity biases ####
+#### Figure S15C-D: Simulations with structures and activity biases ####
 
 all_results_biased_60opt <- read_delim('Results_simulations/Results_pdup1/Simulations_with_structures/008_biased_simulations_60opt/all_results_all_sims.tsv', delim = '\t')
 
@@ -4616,7 +5211,7 @@ all_results_biased_final_points_60opt <- all_results_biased_60opt %>% ungroup() 
          )
   )
 
-#### Figure S12C: Show facets of values of delta(G_fold) ####
+#### Figure S15C: Show facets of values of delta(G_fold) ####
 
 all_results_biased_final_points_new_60opt <- all_results_biased_final_points_60opt %>% ungroup() %>%
   mutate(pct_both = pct_HET + pct_HMs) %>%
@@ -4639,7 +5234,7 @@ all_results_biased_final_points_new_60opt <- all_results_biased_final_points_60o
   )
   )
 
-p_figS12C <- all_results_biased_final_points_new_60opt %>%
+p_figS15C <- all_results_biased_final_points_new_60opt %>%
   pivot_longer(cols = c('more_stable_subunit', 'less_stable_subunit'), names_to = 'subunit',
                values_to = 'dG_fold') %>%
   mutate(Outcome = factor(Outcome, levels = c('HET dominant', 'Both HM and HET', 'HM dominant',
@@ -4668,9 +5263,9 @@ p_figS12C <- all_results_biased_final_points_new_60opt %>%
                             bold(' (kcal/mol)'), sep = '')
   ), fill = '', colour = ''
   )
-p_figS12C
+p_figS15C
 
-#### Figure S12D: Percentage of heteromers throughout ####
+#### Figure S15D: Percentage of heteromers throughout ####
 
 avg_outcome_reps_biased_60opt <- all_results_biased_final_points_60opt %>% ungroup() %>%
   mutate(pct_abundant_HM = ifelse(cAA > cBB, cAA * 100 / Total_complexes, cBB * 100 / Total_complexes), 
@@ -4685,8 +5280,8 @@ avg_outcome_reps_biased_60opt <- all_results_biased_final_points_60opt %>% ungro
             mean_pct_low_mono = mean(pct_low_mono),
             num_reps = n())
 
-## Draw figure S12D
-p_figS12D_all_lines <- avg_outcome_reps_biased_60opt %>%
+## Draw figure S15D
+p_figS15D_all_lines <- avg_outcome_reps_biased_60opt %>%
   pivot_longer(cols = c(mean_pct_HET, mean_pct_abundant_HM, mean_pct_low_HM, 
                         mean_pct_abundant_mono, mean_pct_low_mono), 
                names_to = 'assembly', values_to = 'mean_value') %>%
@@ -4718,18 +5313,18 @@ p_figS12D_all_lines <- avg_outcome_reps_biased_60opt %>%
         axis.text = element_text(size = 8)
         ) +
   ylim(0, 100)
-p_figS12D_all_lines
+p_figS15D_all_lines
 
-## Draw figure S12 ##
+## Draw figure S15 ##
 
-p_figS12_top <- plot_grid(draw_CHeatmap(p_figS12A_logw), draw_CHeatmap(p_figS12B), ncol = 2, 
+p_figS15_top <- plot_grid(draw_CHeatmap(p_figS15A_logw), draw_CHeatmap(p_figS15B), ncol = 2, 
                           labels = c('A', 'B'), label_size = panel_label_size, label_fontface = 'bold')
 
-p_figS12 <- plot_grid(p_figS12_top, p_figS12C, p_figS12D_all_lines, nrow = 3, 
+p_figS15 <- plot_grid(p_figS15_top, p_figS15C, p_figS15D_all_lines, nrow = 3, 
                       labels = c('', 'C', 'D'), label_size = panel_label_size, 
                       label_fontface = 'bold')
 
-ggsave(p_figS12, device = cairo_pdf, width = 20, height = 20, units = 'cm', dpi = 300, 
-       filename = 'Figures/2023-08-22_supp_figures/FigS12.Biased_sims_60opt_new.pdf')
+ggsave(p_figS15, device = cairo_pdf, width = 20, height = 20, units = 'cm', dpi = 300, 
+       filename = 'Figures/Supplementary_figures/FigS15.Biased_sims_60opt_new.pdf')
 ## Cartoons were added manually
 
