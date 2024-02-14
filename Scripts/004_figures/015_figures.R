@@ -34,7 +34,7 @@ theme_set(theme_cowplot() +
 panel_label_size = 14
 
 ### Set the path to the main directory
-setwd('/path/to/Homomer_duplication_2023/')
+setwd('/path/to/Homomer_duplication_2024/')
 
 # A function to draw heatmaps
 draw_CHeatmap <- function(in_heatmap){

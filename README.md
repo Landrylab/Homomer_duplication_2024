@@ -14,10 +14,10 @@ effects. The following data should be downloaded from their respective databases
 
 A helper repository with large files should be downloaded from Zenodo (https://zenodo.org/records/10048861).
 The data from this repository should be uncompressed and organized as follows:
-	- all\_mut\_matrices.tsv: Should be uncompressed and moved to Homomer\_duplication\_2023/Data
-	- Results_pdup1: Should be uncompressed and moved to Homomer\_duplication\_2023/Results\_simulations
-	- Results\_solution\_space: Should be uncompressed and moved to Homomer\_duplication\_2023
-	- Structures: Should be uncompressed and moved to Homomer\_duplication\_2023/Data
+	- all\_mut\_matrices.tsv: Should be uncompressed and moved to Homomer\_duplication\_2024/Data
+	- Results_pdup1: Should be uncompressed and moved to Homomer\_duplication\_2024/Results\_simulations
+	- Results\_solution\_space: Should be uncompressed and moved to Homomer\_duplication\_2024
+	- Structures: Should be uncompressed and moved to Homomer\_duplication\_2024/Data
 
 - Figures: pdf versions of the main and supplementary figures
 
