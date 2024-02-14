@@ -1,4 +1,4 @@
-Scripts and data for Cisneros et al., (2023) Mutational biases contribute to the neutral complexification of protein interaction networks following gene duplication.
+Scripts and data for Cisneros et al., (2024). Mutational biases promote neutral increases in the complexity of protein interaction networks following gene duplication.
 
 Folders contain the following:
 - Data: It contains folders to store the raw PDB files and intermediate files created by the data preparation steps, such as
