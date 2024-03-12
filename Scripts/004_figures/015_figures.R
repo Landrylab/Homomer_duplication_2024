@@ -1437,6 +1437,7 @@ write.table(median_outcome_parametric_sd, append = F, quote = F, sep = '\t', row
 
 ## Convert to a matrix
 matrix_median_outcome_param_df <- median_outcome_parametric_sd %>% ungroup() %>%
+  mutate(intHM_param = format(intHM_param, nsmall = 2)) %>%
   select(intHM_param, sdHM, mean_HET) %>%
   pivot_wider(names_from = intHM_param, values_from = mean_HET)
 
